@@ -8,6 +8,11 @@
 @mixin padding_section () {
   padding-top: 10rem;
   padding-bottom: 10rem;
+
+  @include responsive(768px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 @mixin responsive ($screen_width) {
