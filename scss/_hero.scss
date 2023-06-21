@@ -1,4 +1,6 @@
 .section-hero {
+  margin-top: 10rem;
+
   .grid-container {
     @include flex(row, center, space-between);
     padding-top: 10rem;
