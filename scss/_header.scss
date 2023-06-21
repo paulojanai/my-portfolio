@@ -1,0 +1,30 @@
+nav {
+  height: 9.6rem;
+  border-bottom: 1.75px solid $grayscale-200;
+  display: flex;
+
+  .grid-container {
+    @include flex (row, center, space-between);
+  }
+
+  ul {
+    @include flex (row, center, space-between);
+    gap: 4.8rem;
+
+    li {
+      a {
+        font-size: 1.6rem;
+        color: $grayscale-600;
+        font-family: 'Clash Display', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 100%;
+        letter-spacing: 4%;
+
+        &:hover {
+          border-bottom: 1px solid $grayscale-600;
+        }
+      }
+    }
+  }
+}

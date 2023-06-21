@@ -1,0 +1,13 @@
+.works {
+  background-color: $grayscale-100;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  .coming-soon {
+    margin-top: 6rem;
+    color: $grayscale-400;
+    gap: 0.8rem;
+
+    @include flex(row, center, flex-start)
+  }
+}

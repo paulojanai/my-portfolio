@@ -1,0 +1,49 @@
+.hero {
+  .grid-container {
+    @include flex(row, center, space-between);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    .content {
+      max-width: 58rem;
+
+      .opa {
+        color: $grayscale-400;
+        @include flex(row, center, flex-start);
+        gap: 1.6rem;
+        margin-bottom: 1.6rem;
+      }
+
+      h4 {
+        margin-top: 0.8rem;
+        color: $grayscale-400;
+      }
+
+      p.body-one {
+        color: $grayscale-400;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 200%;
+        margin-top: 8rem;
+      }
+
+      .companies {
+        @include flex(row, center, flex-start);
+        gap: 3.2rem;
+        margin-top: 6rem;
+
+        img {
+          height: 40px;
+
+          &:last-child {
+            height: 28px;
+          }
+        }
+      }
+    }
+
+    img {
+      max-width: 50rem;
+    }
+  }
+}
