@@ -20,16 +20,52 @@
     @include flex(row, flex-start, space-between);
 
     .content {
-      max-width: 62rem;
+      max-width: 64rem;
 
-      .actions {
-        display: flex;
-        gap: 1.6rem;
+      .description {
+        color: $grayscale-400;
+        font-weight: 400;
+        line-height: 180%;
+        margin-top: 4rem;
       }
     }
 
-    img {
-      max-width: 52rem;
+    .tasks {
+      margin-top: 4rem;
+
+      .title {
+        font-weight: 600;
+        color: $grayscale-700;
+      }
+
+      .itens {
+        @include flex(row, flex-start, flex-start);
+        gap: 4rem;
+        margin-top: 3.2rem;
+
+        .group {
+          p {
+            color: $grayscale-400;
+            margin-bottom: 1.2rem;
+
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+
+
+        }
+      }
     }
+
+    .actions {
+      display: flex;
+      gap: 1.6rem;
+      margin-top: 6rem;
+    }
+  }
+
+  .picture-about {
+    max-width: 52rem;
   }
 }
