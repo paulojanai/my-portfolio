@@ -1,0 +1,42 @@
+.btn {
+  display: flex;
+  height: 5.6rem;
+  padding: 0rem 3.2rem;
+  border: 2px solid transparent;
+
+  .content {
+    @include flex(row, center, center);
+    gap: 1rem;
+
+    span {
+      font-size: 1.5rem;
+      @include link();
+      margin-top: 5px;
+    }
+  }
+
+  img {
+    height: 2.4rem;
+  }
+}
+
+.btn-primary {
+  background-color: $grayscale-700;
+  color: $grayscale-50;
+  transition: all 0.3s;
+
+  span {
+    @include expand_border($grayscale-50)
+  }
+}
+
+.btn-secondary {
+  background-color: $grayscale-50;
+  border: 2px solid $grayscale-700;
+  color: $grayscale-700;
+  transition: all 0.3s;
+
+  span {
+    @include expand_border($grayscale-700)
+  }
+}

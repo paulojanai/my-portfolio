@@ -1,0 +1,16 @@
+@mixin expand_border ($border_color) {
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px $border_color;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 0% 50%;
+  }
+
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}

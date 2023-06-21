@@ -11,3 +11,25 @@
     @include flex(row, center, flex-start)
   }
 }
+
+.about {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  .grid-container {
+    @include flex(row, flex-start, space-between);
+
+    .content {
+      max-width: 62rem;
+
+      .actions {
+        display: flex;
+        gap: 1.6rem;
+      }
+    }
+
+    img {
+      max-width: 52rem;
+    }
+  }
+}
