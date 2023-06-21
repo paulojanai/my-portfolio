@@ -2,3 +2,21 @@
   @include flex(row, center, flex-start);
   gap: 0.8rem;
 }
+
+.item-experience {
+  padding: 2.4rem 0rem;
+  border-bottom: 1px solid $grayscale-200;
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $grayscale-700;
+    margin-bottom: 0.8rem;
+  }
+
+  span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $grayscale-400;
+  }
+}

@@ -1,7 +1,6 @@
-.works {
+.section-works {
   background-color: $grayscale-100;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  @include padding_section();
 
   .coming-soon {
     margin-top: 6rem;
@@ -12,9 +11,8 @@
   }
 }
 
-.about {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+.section-about {
+  @include padding_section();
 
   .grid-container {
     @include flex(row, flex-start, space-between);
@@ -28,32 +26,32 @@
         line-height: 180%;
         margin-top: 4rem;
       }
-    }
 
-    .tasks {
-      margin-top: 4rem;
+      .tasks {
+        margin-top: 4rem;
 
-      .title {
-        font-weight: 600;
-        color: $grayscale-700;
-      }
+        .title {
+          font-weight: 600;
+          color: $grayscale-700;
+        }
 
-      .itens {
-        @include flex(row, flex-start, flex-start);
-        gap: 4rem;
-        margin-top: 3.2rem;
+        .itens {
+          @include flex(row, flex-start, flex-start);
+          gap: 4rem;
+          margin-top: 3.2rem;
 
-        .group {
-          p {
-            color: $grayscale-400;
-            margin-bottom: 1.2rem;
+          .group {
+            p {
+              color: $grayscale-400;
+              margin-bottom: 1.2rem;
 
-            &:last-child {
-              margin-bottom: 0px;
+              &:last-child {
+                margin-bottom: 0px;
+              }
             }
+
+
           }
-
-
         }
       }
     }
@@ -67,5 +65,23 @@
 
   .picture-about {
     max-width: 52rem;
+  }
+}
+
+.section-experience {
+  background-color: $grayscale-100;
+  @include padding_section();
+
+  .grid-container {
+    @include flex(row, flex-start, space-between);
+
+    .experience {
+      width: 100%;
+      max-width: 56rem;
+
+      h3 {
+        margin-bottom: 4rem;
+      }
+    }
   }
 }

@@ -5,6 +5,11 @@
   justify-content: $justify;
 }
 
+@mixin padding_section () {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 @mixin responsive ($screen_width) {
   @media (max-width: $screen_width) {
     @content
