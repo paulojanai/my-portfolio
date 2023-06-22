@@ -3,17 +3,19 @@
 
   .grid-container {
     @include flex(row, center, space-between);
-    padding-top: 10rem;
-    padding-bottom: 10rem;
 
     .content {
-      max-width: 64rem;
+      max-width: 63rem;
 
       .opa {
         color: $grayscale-400;
         @include flex(row, center, flex-start);
         gap: 1.6rem;
         margin-bottom: 1.6rem;
+
+        .hand {
+          height: 4rem;
+        }
       }
 
       h4 {
@@ -26,7 +28,7 @@
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 200%;
-        margin-top: 8rem;
+        margin-top: 3.2rem;
       }
 
       .companies {
@@ -36,16 +38,76 @@
 
         img {
           height: 40px;
+          filter: grayscale(1);
+          transition: filter 0.3s;
 
           &:last-child {
             height: 28px;
+          }
+
+          &:hover {
+            filter: grayscale(0);
           }
         }
       }
     }
 
-    img {
-      max-width: 52rem;
+    .my-photo {
+      height: 72rem;
+    }
+
+    @include responsive(1200px) {
+      @include padding_section();
+
+      .content {
+        max-width: 100%;
+      }
+
+      .my-photo {
+        display: none;
+      }
+    }
+
+    @include responsive(991px) {
+      @include flex(column, flex-start, center);
+
+      .content {
+        .companies {
+          margin-top: 4rem;
+        }
+      }
+
+      .my-photo {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        margin-top: 6rem;
+      }
+    }
+
+    @include responsive(600px) {
+      .content {
+        .opa {
+          gap: 0.8rem;
+
+          .hand {
+            height: 3rem;
+          }
+        }
+
+        .companies {
+          @include flex(row, center, flex-start);
+          flex-wrap: wrap;
+
+          img {
+            height: 32px;
+
+            &:last-child {
+              height: 24px;
+            }
+          }
+        }
+      }
     }
   }
 }

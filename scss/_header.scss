@@ -10,23 +10,43 @@ header {
 
   .grid-container {
     @include flex (row, center, space-between);
-  }
 
-  nav {
-    ul {
-      @include flex (row, center, space-between);
-      gap: 4.8rem;
-      margin-top: 2px;
+    nav {
+      ul {
+        @include flex (row, center, space-between);
+        gap: 4.8rem;
+        margin-top: 2px;
 
-      li {
-        a {
-          font-size: 1.6rem;
-          color: $grayscale-600;
-          @include link();
+        li {
+          a {
+            font-size: 1.6rem;
+            color: $grayscale-600;
+            @include link();
 
-          @include expand_border($grayscale-600)
+            @include expand_border($grayscale-600)
+          }
         }
       }
+    }
+
+    .menu {
+      display: none;
+      padding: 1.6rem;
+
+      img {
+        height: 3.2rem;
+      }
+    }
+
+    @include responsive(768px) {
+      nav {
+        display: none;
+      }
+
+      .menu {
+        display: block;
+      }
+
     }
   }
 }

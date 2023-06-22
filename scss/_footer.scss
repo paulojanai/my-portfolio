@@ -1,8 +1,8 @@
 footer {
   background-color: $grayscale-700;
-  padding-top: 10rem;
 
   .grid-container {
+    padding-top: 10rem;
 
     .top {
       @include flex(row, center, space-between);
@@ -32,11 +32,7 @@ footer {
         @include flex(row, flex-start, flex-start);
         gap: 3.2rem;
 
-        .left {
-          @include flex(row, center, center);
-          gap: 3.2rem;
-        }
-
+        .left,
         .right {
           @include flex(row, center, center);
           gap: 3.2rem;
@@ -60,5 +56,32 @@ footer {
       }
     }
 
+    @include responsive(768px) {
+      padding-top: 6rem;
+
+      .top {
+        @include flex(column, flex-start, space-between);
+        gap: 4rem;
+        margin-bottom: 4rem;
+
+        a {
+          @include flex(row, center, center);
+          width: 100%;
+        }
+      }
+
+      .group-links {
+        padding-bottom: 4rem;
+
+        .links {
+          gap: 6rem;
+
+          .left,
+          .right {
+            @include flex(column, flex-start, flex-start);
+          }
+        }
+      }
+    }
   }
 }

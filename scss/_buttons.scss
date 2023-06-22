@@ -12,12 +12,8 @@
     span {
       font-size: 1.6rem;
       @include link();
-      margin-top: 5px;
+      margin-top: 0.5rem;
       padding: 2rem 0rem 2rem 0rem;
-    }
-
-    &:hover {
-      gap: 1.6rem;
     }
 
   }
