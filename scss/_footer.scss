@@ -1,0 +1,64 @@
+footer {
+  background-color: $grayscale-700;
+  padding-top: 10rem;
+
+  .grid-container {
+
+    .top {
+      @include flex(row, center, space-between);
+      margin-bottom: 6rem;
+
+      .group-links {
+        border: none;
+        padding-bottom: 0rem;
+      }
+    }
+
+    .group-links {
+      padding-bottom: 6rem;
+      border-bottom: 1px solid $grayscale-500;
+
+
+      .title-group-links {
+        margin-bottom: 1.6rem;
+        color: $grayscale-300;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 100%;
+        text-transform: uppercase;
+      }
+
+      .links {
+        @include flex(row, flex-start, flex-start);
+        gap: 3.2rem;
+
+        .left {
+          @include flex(row, center, center);
+          gap: 3.2rem;
+        }
+
+        .right {
+          @include flex(row, center, center);
+          gap: 3.2rem;
+        }
+      }
+    }
+
+    .bottom {
+      @include flex(row, center, space-between);
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+
+      p {
+        color: $grayscale-200;
+        font-size: 1.4rem;
+        line-height: 100%;
+      }
+
+      img {
+        height: 1.6rem;
+      }
+    }
+
+  }
+}

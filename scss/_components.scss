@@ -1,6 +1,19 @@
-.link-social {
-  @include flex(row, center, flex-start);
-  gap: 0.8rem;
+a {
+  &.footer-link {
+    @include flex(row, center, flex-start);
+    gap: 0.8rem;
+
+    img {
+      height: 2rem;
+    }
+
+    span {
+      font-size: 1.6rem;
+      color: $grayscale-50;
+      @include link();
+      @include expand_border($grayscale-100);
+    }
+  }
 }
 
 .item-experience {
