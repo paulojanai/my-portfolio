@@ -19,108 +19,144 @@
   @include padding_section();
 
   .grid-container {
-    @include flex(row, center, space-between);
+    h2 {
+      margin-bottom: 4rem;
+    }
 
-    .content {
-      max-width: 62rem;
+    .description {
+      color: $grayscale-400;
+      font-weight: 400;
+      line-height: 180%;
+    }
 
-      .description {
-        color: $grayscale-400;
-        font-weight: 400;
-        line-height: 180%;
-        margin-top: 4rem;
-      }
+    .body {
+      margin-top: 4rem;
+      @include flex(row, flex-start, space-between);
+      gap: 4rem;
 
-      .tasks {
-        margin-top: 4rem;
+      .card {
+        width: 50%;
+        border: 1px solid $grayscale-200;
+        padding: 4rem 3.2rem;
+        height: 64rem;
 
-        .title {
-          font-weight: 600;
-          color: $grayscale-500;
+        .icon {
+          height: 6.4rem;
+          width: 6.44rem;
+          @include flex(row, center, center);
+          background-color: $grayscale-100;
+          margin-bottom: 2.4rem;
         }
 
-        .itens {
-          @include flex(row, flex-start, flex-start);
-          gap: 4rem;
+        h4 {
+          font-weight: 600;
+          margin-bottom: 0.8rem;
+        }
+
+        .skills {
           margin-top: 3.2rem;
 
-          .group {
-            p {
-              color: $grayscale-400;
-              margin-bottom: 0.8rem;
-              line-height: 160%;
+          p {
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+          }
 
-              &:last-child {
-                margin-bottom: 0px;
+          .list {
+            @include flex(row, flex-start, flex-start);
+            gap: 2.4rem;
+
+            ul {
+              width: 50%;
+
+              li {
+                margin-bottom: 0.6rem;
+                color: $grayscale-500;
+                font-size: 1.6rem;
+                line-height: 150%;
+
+                &:last-child {
+                  margin-bottom: 0rem;
+                }
               }
             }
-
-
           }
         }
       }
 
-      .actions {
-        max-width: 100%;
-        @include flex(row, center, flex-start);
-        gap: 1.6rem;
-        margin-top: 6rem;
-      }
+
     }
 
-    .picture-about {
-      max-width: 100%;
-    }
+    // .actions {
+    //   max-width: 100%;
+    //   @include flex(row, center, flex-start);
+    //   gap: 1.6rem;
+    //   margin-top: 6rem;
+    // }
+
+    // .picture-about {
+    //   max-width: 100%;
+    // }
 
     @include responsive(1200px) {
-      .content {
-        max-width: 100%;
-      }
+      .body {
+        @include flex(column, center, flex-start);
 
-      .picture-about {
-        display: none;
-      }
-    }
-
-    @include responsive(991px) {
-      @include flex(column-reverse, flex-start, center);
-
-      .content {
-        max-width: 72rem;
-
-        .actions {
-          margin-top: 4rem;
+        .card {
+          width: 100%;
+          height: 100%;
         }
       }
-
-      .picture-about {
-        display: inline-block;
-        margin-bottom: 4rem;
-        width: 100%;
-      }
     }
+
+    @include responsive(991px) {}
 
     @include responsive (600px) {
-      .content {
-        max-width: 100%;
+      .body {
+        @include flex(column, center, flex-start);
 
-        .tasks {
-          .itens {
-            @include flex(column, flex-start, flex-start);
-            gap: 0.8rem;
-          }
-        }
+        .card {
+          width: 100%;
+          height: 100%;
 
-        .actions {
-          @include flex(column, center, center);
-          gap: 0.8rem;
+          .skills {
+            .list {
+              @include flex(column, flex-start, flex-start);
+              gap: 0.6rem;
 
-          a {
-            @include flex(row, center, center);
-            width: 100%;
+              ul {
+                width: 100%;
+
+                &:last-child {
+                  margin-bottom: 0.6rem;
+
+                  li {
+                    &:last-child {
+                      margin-bottom: 0rem;
+                    }
+                  }
+                }
+
+                li {
+                  &:last-child {
+                    margin-bottom: 0.6rem;
+                  }
+                }
+              }
+            }
           }
         }
       }
+
+      // .actions {
+      //   @include flex(column, center, center);
+      //   gap: 0.8rem;
+
+      //   a {
+      //     @include flex(row, center, center);
+      //     width: 100%;
+      //   }
+      // }
     }
   }
 }
