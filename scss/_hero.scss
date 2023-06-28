@@ -1,5 +1,7 @@
 .section-hero {
-  margin-top: 10rem;
+  // margin-top: 10rem;
+  background-color: $grayscale-700;
+  @include padding_section();
 
   .grid-container {
     @include flex(row, center, space-between);
@@ -18,13 +20,17 @@
         }
       }
 
+      color: $grayscale-300;
+
+      h1 {
+        color: $grayscale-50;
+      }
+
       h4 {
         margin-top: 0.8rem;
-        color: $grayscale-400;
       }
 
       p.body-one {
-        color: $grayscale-400;
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 200%;
@@ -53,12 +59,10 @@
     }
 
     .my-photo {
-      height: 72rem;
+      height: 60rem;
     }
 
     @include responsive(1200px) {
-      @include padding_section();
-
       .content {
         max-width: 100%;
       }
