@@ -19,9 +19,9 @@
       <a href=""><img src="./img/logo-dark.svg" alt=""></a>
       <nav>
         <ul>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#works">Projetos</a></li>
+          <li><a href="#section-about">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
           <div class="social">
             <li>
               <a href="#">
@@ -73,7 +73,7 @@
     </div>
   </section>
 
-  <section class="section-works">
+  <section id="works" class="section-works">
     <div class="grid-container">
       <h2>projetos</h2>
 
@@ -85,14 +85,23 @@
 
   </section>
 
-  <section class="section-about">
+  <section id="section-about" class="section-about">
     <div class="grid-container">
-      <h2>Sobre</h2>
-      <p class="description">Apaixonado e fascinado em desenhar e desenvolver interfaces, acreditando que a construção
-        estruturada de interfaces é a melhor maneira de projetar produtos eficientes, intuitivos, consistentes e,
-        principalmente, escaláveis. Além disso, possuo conhecimentos em Design System tanto na construção quanto na
-        manutenção.</p>
-
+      <div class="header">
+        <div class="text">
+          <h2>Sobre</h2>
+          <p class="description">Apaixonado e fascinado em desenhar e desenvolver interfaces, acreditando que a
+            construção
+            estruturada de interfaces é a melhor maneira de projetar produtos eficientes, intuitivos, consistentes e,
+            principalmente, escaláveis.</p>
+        </div>
+        <a href="#" class="btn btn-primary">
+          <div class="content">
+            <span>Ver currículo</span>
+            <img src="./img/arrow-up-right.svg" alt="">
+          </div>
+        </a>
+      </div>
       <div class="body">
         <div class="card">
           <div class="icon">
@@ -100,7 +109,7 @@
           </div>
 
           <h4>Frontend & Mobile developer</h4>
-          <p class="description">Curto em codificar as coisas do zero e dá vidas as ideias na web e mobile</p>
+          <p class="title">Curto em codificar as coisas do zero e dá vidas as ideias na web e mobile</p>
 
           <div class="skills">
             <p>Habilidades</p>
@@ -147,7 +156,7 @@
           </div>
 
           <h4>UI Designer</h4>
-          <p class="description">Desenhando interfaces estruturadas, interações inteligentes e utilizando padrões de
+          <p class="title">Desenhando interfaces estruturadas, interações inteligentes e utilizando padrões de
             design para apps e websites</p>
 
           <div class="skills">
@@ -245,7 +254,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="contact">
     <div class="grid-container">
       <div class="top">
         <a href="#" class="btn btn-primary-light">
