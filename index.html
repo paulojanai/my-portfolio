@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Paulo Janai - Developer & Designer</title>
 </head>
 
@@ -50,7 +51,7 @@
 
   <section class="section-hero">
     <div class="grid-container">
-      <div class="content">
+      <div class="content" data-aos="fade-right">
         <div class="opa">
           <h3 class="paragraph">Opa,</h3>
           <img class="hand" src="./img/hand.svg" alt="">
@@ -69,7 +70,9 @@
         </div>
       </div>
 
-      <img class="my-photo" src="./img/picture-hero.png" alt="">
+      <div data-aos="fade-left">
+        <img class="my-photo" src="./img/picture-hero.png" alt="">
+      </div>
 
     </div>
   </section>
@@ -89,21 +92,21 @@
   <section id="section-about" class="section-about">
     <div class="grid-container">
       <div class="header">
-        <div class="text">
+        <div class="text" data-aos="fade-right">
           <h2>Sobre</h2>
           <p class="body-m">Apaixonado e fascinado em desenhar e desenvolver interfaces, acreditando que a
             construção
             estruturada de interfaces é a melhor maneira de projetar produtos eficientes, intuitivos, consistentes e,
             principalmente, escaláveis.</p>
         </div>
-        <a href="#" class="btn btn-primary">
+        <a href="#" class="btn btn-primary" data-aos="fade-left">
           <div class="content">
             <span>Ver currículo</span>
             <img src="./img/arrow-up-right.svg" alt="">
           </div>
         </a>
       </div>
-      <div class="body">
+      <div class="body" data-aos="fade-up">
         <div class="card">
           <div class="icon">
             <img src="./img/developer.svg" alt="">
@@ -201,7 +204,7 @@
   </section>
 
   <section class="section-experience">
-    <div class="grid-container">
+    <div class="grid-container" data-aos="fade-up">
       <div class="experience">
         <h3>Experiência</h3>
         <div class="item-experience">
@@ -305,6 +308,15 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
 
 </body>
 
