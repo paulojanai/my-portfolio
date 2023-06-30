@@ -101,9 +101,26 @@
       }
     }
 
-    @include responsive(991px) {}
+    @include responsive(991px) {
+      .header {
+        @include flex(column, flex-start, space-between);
+
+        .text {
+          max-width: 100%;
+          margin-bottom: 2.4rem
+        }
+      }
+    }
 
     @include responsive (600px) {
+
+      .header {
+        a {
+          @include flex(column, center, center);
+          width: 100%;
+        }
+      }
+
       .body {
         @include flex(column, center, flex-start);
 
@@ -114,24 +131,18 @@
           .skills {
             .list {
               @include flex(column, flex-start, flex-start);
-              gap: 0.6rem;
+              gap: 0rem;
 
               ul {
                 width: 100%;
 
                 &:last-child {
-                  margin-bottom: 0.6rem;
-
-                  li {
-                    &:last-child {
-                      margin-bottom: 0rem;
-                    }
-                  }
+                  margin-bottom: 0rem;
                 }
 
                 li {
                   &:last-child {
-                    margin-bottom: 0.6rem;
+                    margin-bottom: 0rem;
                   }
                 }
               }
@@ -139,16 +150,6 @@
           }
         }
       }
-
-      // .actions {
-      //   @include flex(column, center, center);
-      //   gap: 0.8rem;
-
-      //   a {
-      //     @include flex(row, center, center);
-      //     width: 100%;
-      //   }
-      // }
     }
   }
 }
