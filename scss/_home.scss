@@ -24,13 +24,7 @@
     }
 
     p {
-      color: $grayscale-400;
-      font-weight: 400;
-      line-height: 180%;
-    }
-
-    .description {
-      font-size: 1.8rem;
+      color: $grayscale-500;
     }
 
     .header {
@@ -61,22 +55,15 @@
         }
 
         h4 {
-          font-weight: 600;
           margin-bottom: 0.8rem;
-        }
-
-        .title {
-          font-size: 1.6rem;
         }
 
         .skills {
           margin-top: 3.2rem;
 
           p {
-            font-weight: 600;
-            font-size: 1.8rem;
+            color: $grayscale-700;
             margin-bottom: 1.2rem;
-            color: $grayscale-600;
           }
 
           .list {
@@ -87,10 +74,11 @@
               width: 50%;
 
               li {
-                margin-bottom: 0.6rem;
+                margin-bottom: 0.2rem;
                 color: $grayscale-500;
                 font-size: 1.6rem;
-                line-height: 150%;
+                font-weight: 400;
+                line-height: 180%;
 
                 &:last-child {
                   margin-bottom: 0rem;
@@ -178,8 +166,9 @@
       max-width: 56rem;
 
       .item-experience {
-        .title {
-          color: $grayscale-500;
+        .body-l {
+          color: $grayscale-700;
+          margin-bottom: 0.8rem;
         }
       }
 

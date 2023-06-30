@@ -10,10 +10,9 @@
     transition: gap 0.3s;
 
     span {
-      font-size: 1.6rem;
-      @include link();
       margin-top: 0.5rem;
       padding: 2rem 0rem 2rem 0rem;
+      @include typography-button();
     }
 
   }

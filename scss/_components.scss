@@ -10,7 +10,6 @@ a {
     span {
       font-size: 1.6rem;
       color: $grayscale-50;
-      @include link();
       @include expand_border($grayscale-100);
     }
   }
