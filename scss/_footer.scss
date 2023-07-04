@@ -61,7 +61,7 @@ footer {
       padding-top: 6rem;
 
       .top {
-        @include flex(column, flex-start, space-between);
+        @include flex(column, center, center);
         gap: 4rem;
         margin-bottom: 4rem;
 
@@ -74,12 +74,27 @@ footer {
       .group-links {
         padding-bottom: 4rem;
 
+        .span {
+          text-align: center;
+        }
+
         .links {
           gap: 6rem;
+          @include flex(row, center, center);
 
           .left,
           .right {
-            @include flex(column, flex-start, flex-start);
+            @include flex(column, center, center);
+          }
+        }
+      }
+
+      .bottom {
+        @include flex(column, center, center);
+
+        p {
+          &:first-child {
+            margin-bottom: 2.4rem;
           }
         }
       }

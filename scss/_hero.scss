@@ -93,6 +93,10 @@
           }
         }
 
+        p.body-xl {
+          max-width: 34rem;
+        }
+
         .companies {
           @include flex(row, center, flex-start);
           flex-wrap: wrap;

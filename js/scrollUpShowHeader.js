@@ -7,7 +7,7 @@ function scrollUpShowHeader () {
 
     // Get the new Value
     newValue = window.scrollY;
-    console.log(newValue);
+    // console.log(newValue);
 
     // Subtract the two and conclude
     if (oldValue - newValue < 0) {
