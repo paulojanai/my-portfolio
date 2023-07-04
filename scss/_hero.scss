@@ -1,7 +1,7 @@
 .section-hero {
-  // margin-top: 10rem;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
   background-color: $grayscale-700;
-  @include padding_section();
 
   .grid-container {
     @include flex(row, center, space-between);
@@ -93,6 +93,10 @@
           }
         }
 
+        p.body-xl {
+          max-width: 34rem;
+        }
+
         .companies {
           @include flex(row, center, flex-start);
           flex-wrap: wrap;
@@ -107,5 +111,10 @@
         }
       }
     }
+  }
+
+  @include responsive(768px) {
+    padding-top: 16rem;
+    padding-bottom: 6rem;
   }
 }

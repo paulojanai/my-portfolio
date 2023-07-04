@@ -35,15 +35,15 @@
 
 <body>
 
-  <header>
+  <header id="header">
     <div class="grid-container">
       <a data-aos="fade-right" class="logo" href="https://paulojanai.netlify.app"><img src="./img/logo-dark.svg"
           alt="Logo Paulo Janai"></a>
       <nav>
         <ul data-aos="fade-left">
-          <li><a href="#works">Trabalhos</a></li>
-          <li><a href="#section-about">Sobre</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#works">Work</a></li>
+          <li><a href="#section-about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
           <ul class="social">
             <li>
               <a href="https://github.com/paulojanai" target="_blank">
@@ -64,25 +64,59 @@
         </ul>
       </nav>
 
-      <a href="#" data-aos="fade-left" class="menu">
+      <span onclick="openMenu()" data-aos="fade-left" class="menu">
         <img src="./img/menu.svg" alt="Ícone menu">
-      </a>
+      </span>
     </div>
   </header>
+
+  <div id="menu-mobile">
+    <div class="grid-container">
+      <div class="menu">
+        <span onclick="closeMenu()" data-aos="fade-left" class="close">
+          <img src="./img/x.svg" alt="Ícone menu">
+        </span>
+      </div>
+
+      <nav>
+        <ul data-aos="fade-left" class="items-menu">
+          <li><a href="#works" onclick="closeMenu()">Work</a></li>
+          <li><a href="#section-about" onclick="closeMenu()">About</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+          <div class="social">
+            <li>
+              <a href="https://github.com/paulojanai" target="_blank">
+                <img src="./img/brand-github.svg" alt="Ícone github">
+              </a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/paulojanai" target="_blank">
+                <img src="./img/brand-dribbble.svg" alt="Ícone dribbble">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/paulojanai/" target="_blank">
+                <img src="./img/brand-linkedin.svg" alt="Ícone linkedin">
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <section class="section-hero">
     <div class="grid-container">
       <div class="content" data-aos="fade-right">
         <div class="opa">
-          <h3 class="paragraph">Opa,</h3>
+          <h3 class="paragraph">Hey,</h3>
           <img class="hand" src="./img/hand.svg" alt="Emoji hand">
         </div>
-        <h1>Eu sou Janai</h1>
-        <p class="body-xl">Frontend & Mobile Developer | UI Designer</p>
-        <p class="body-m">Criando e desenvolvendo interfaces com o foco na experiência do usuário. Colaborando
-          com
-          equipes multidisciplinares para garantir produtos funcionais e esteticamente agradáveis. Trabalhou com algumas
-          das maiores empresas do brasil, como Casa Magalhães e Grupo Boticário.</p>
+        <h1>I'm Janai</h1>
+        <p class="body-xl">Mobile & Frontend Developer | UI Designer</p>
+        <p class="body-m">Designing and developing interfaces with a focus on user experience. Collaborating with
+          multidisciplinary teams to ensure functional and aesthetically pleasing products. He has worked with some of
+          the biggest companies in Brazil, such as Casa Magalhães and Grupo Boticário.</p>
 
         <div class="companies">
           <img src="./img/grupo_boticario.png" alt="Logo Grupo Boticário">
@@ -100,11 +134,11 @@
 
   <section id="works" class="section-works">
     <div class="grid-container">
-      <h2>Trabalhos</h2>
+      <h2>Work</h2>
 
       <div class="coming-soon">
         <img src="./img/history.svg" alt="Ícone history">
-        <p class="body-l">Em breve</p>
+        <p class="body-l">Coming soon</p>
       </div>
     </div>
 
@@ -114,15 +148,14 @@
     <div class="grid-container">
       <div class="header">
         <div class="text" data-aos="fade-right">
-          <h2>Sobre</h2>
-          <p class="body-m">Apaixonado e fascinado em desenhar e desenvolver interfaces, acreditando que a
-            construção
-            estruturada de interfaces é a melhor maneira de projetar produtos eficientes, intuitivos, consistentes e,
-            principalmente, escaláveis.</p>
+          <h2>About</h2>
+          <p class="body-m">Passionate and fascinated with designing and developing interfaces, believing that the
+            structured construction of interfaces is the best way to design efficient, intuitive, consistent and,
+            mainly, scalable products.</p>
         </div>
         <a href="./paulojanai-cv.pdf" target="_blank" class="btn btn-primary" data-aos="fade-left">
           <div class="content">
-            <span>Ver currículo</span>
+            <span>view resume</span>
             <img src="./img/arrow-up-right.svg" alt="Ícone arrow-up">
           </div>
         </a>
@@ -134,26 +167,26 @@
           </div>
 
           <h4>Frontend & Mobile developer</h4>
-          <p class="body-m">Curto em codificar as coisas do zero e dá vidas as ideias na web e mobile</p>
+          <p class="body-m">Like to code things from scratch and bring ideas to life on web and mobile</p>
 
           <div class="skills">
-            <p class="body-l">Habilidades</p>
+            <p class="body-l">Expertise</p>
             <div class="list">
               <ul>
-                <li>- Gerencimento de estados</li>
-                <li>- Desenvolver e estruturar componentes</li>
-                <li>- Testes unitários e 2e2 com Detox</li>
+                <li>- State management</li>
+                <li>- Develop and structure components</li>
+                <!-- <li>- Testes unitários e 2e2 com Detox</li> -->
               </ul>
               <ul>
-                <li>- Padrões de UI</li>
+                <li>- UI Patterns</li>
                 <li>- Clean code</li>
-                <li>- Consumo de API`s</li>
+                <li>- API's consumption</li>
               </ul>
             </div>
           </div>
 
           <div class="skills">
-            <p class="body-l">Ferramentas</p>
+            <p class="body-l">Tools & techs</p>
             <div class="list">
               <ul>
                 <li>- VS Code</li>
@@ -181,35 +214,35 @@
           </div>
 
           <h4>UI Designer</h4>
-          <p class="body-m">Desenhando interfaces estruturadas, interações inteligentes e utilizando padrões de
-            design para apps e websites</p>
+          <p class="body-m">Designing structured interfaces, intelligent interactions and using patterns of
+            design for apps and websites</p>
 
           <div class="skills">
-            <p class="body-l">Habilidades</p>
+            <p class="body-l">Expertise</p>
             <div class="list">
               <ul>
-                <li>- Padrões de UI</li>
-                <li>- Criação de componentes</li>
-                <li>- Análise de competidores</li>
-                <li>- Prototipagem escalável</li>
+                <li>- UI Patterns</li>
+                <li>- Component creation</li>
+                <li>- Competitor analysis</li>
+                <li>- Scalable prototyping</li>
                 <li>- Handoff</li>
               </ul>
               <ul>
-                <li>- Documentação</li>
+                <li>- Documentation</li>
                 <li>- Design System</li>
-                <li>- Estruturar componentes</li>
-                <li>- Microinterações</li>
-                <li>- Teste de usabilidade</li>
+                <li>- Structuring components</li>
+                <li>- Microinteractions</li>
+                <li>- Usability test</li>
               </ul>
             </div>
           </div>
 
           <div class="skills">
-            <p class="body-l">Ferramentas</p>
+            <p class="body-l">Tools & techs</p>
             <div class="list">
               <ul>
                 <li>- Figma & Adobe XD</li>
-                <li>- Papel & caneta</li>
+                <li>- Paper & pen</li>
                 <li>- SVGator</li>
               </ul>
               <ul>
@@ -230,18 +263,18 @@
         <h3>Experiência</h3>
         <div class="item-experience">
           <p class="body-l">Grupo Boticário - Product Designer</p>
-          <p class="body-m">Ago 2022 - Mar 2023</p>
+          <p class="body-m">Aug 2022 - Mar 2023</p>
         </div>
         <div class="item-experience">
           <p class="body-l">Casa Magalhães - UX/UI Designer</p>
           <p class="body-m">Mar 2021 - Jul 2022</p>
         </div>
         <div class="item-experience">
-          <p class="body-l">Automação.com - Desenvolvedor Mobile</p>
-          <p class="body-m">Mar 2020 - Fev 2021</p>
+          <p class="body-l">Automação.com - Mobile developer</p>
+          <p class="body-m">Mar 2020 - Feb 2021</p>
         </div>
         <div class="item-experience">
-          <p class="body-l">Cettecnologia - UI Designer e Desenvolvedor Frontend</p>
+          <p class="body-l">Cettecnologia - UI Designer e Frontend developer</p>
           <p class="body-m">Jun 2019 - Nov 2019</p>
         </div>
       </div>
@@ -250,15 +283,15 @@
         <h3>Educação</h3>
         <div class="item-experience">
           <p class="body-l">Codeboost by Will Moreira</p>
-          <p class="body-m">Mai 2023 - Ago 2023, William Moreira</p>
+          <p class="body-m">May 2023 - Aug 2023, William Moreira</p>
         </div>
         <div class="item-experience">
           <p class="body-l">Design Circuit by Apparicio Junior</p>
           <p class="body-m">Set 2020 - 2021, Apparicio Junior</p>
         </div>
         <div class="item-experience">
-          <p class="body-l">Graduação em Ciência da Computação</p>
-          <p class="body-m">Jan 2016 - Dez 2019 (Não concluído), UFC Quixadá</p>
+          <p class="body-l">Computer Science</p>
+          <p class="body-m">Jan 2016 - Dec 2019 (not complete), UFC Quixadá</p>
         </div>
       </div>
     </div>
@@ -269,7 +302,7 @@
       <div class="top">
         <a href="#" class="btn btn-primary-light">
           <div class="content">
-            <span>Vamos trabalhar juntos</span>
+            <span>LET'S WORK TOGETHER</span>
             <img src="./img/arrow-up-right-light.svg" alt="Ícone arrow-up">
           </div>
         </a>
@@ -279,18 +312,18 @@
           <div class="links">
             <a href="./paulojanai-cv.pdf" class="footer-link" download="paulojanai-cv">
               <img src="./img/file-text.svg" alt="Ícone file-text">
-              <span>currículo</span>
+              <span>Resume</span>
             </a>
             <a href="./paulojanai-portfolio.pdf" class="footer-link" download="paulojanai-portfolio">
               <img src="./img/file-text.svg" alt="Ícone file-text">
-              <span>portifólio</span>
+              <span>Portfolio</span>
             </a>
           </div>
         </div>
       </div>
 
       <div class="group-links">
-        <p class="span">Siga-me</p>
+        <p class="span">Follow me</p>
         <div class="links">
           <div class="left">
             <a href="https://github.com/paulojanai" target="_blank" class="footer-link">
@@ -324,19 +357,23 @@
       </div>
 
       <div class="bottom">
-        <p>© Copyright 2023. Paulo Janai</p>
-        <img src="./img/logo-dark.svg" alt="">
+        <p>© Copyright 2023. All rights reserved.</p>
+        <p>Designed and developed: Paulo Janai</p>
       </div>
     </div>
   </footer>
 
+  <script src="./js/menuMobile.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/scrollUpShowHeader.js"></script>
 
   <script>
     AOS.init({
       duration: 1200,
       once: true
     });
+
+    scrollUpShowHeader();
   </script>
 
 </body>
