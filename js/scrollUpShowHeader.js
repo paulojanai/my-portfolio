@@ -6,8 +6,8 @@ function scrollUpShowHeader () {
   window.addEventListener('scroll', function (e) {
 
     // Get the new Value
-    newValue = window.pageYOffset;
-    // console.log(newValue);
+    newValue = window.scrollY;
+    console.log(newValue);
 
     // Subtract the two and conclude
     if (oldValue - newValue < 0) {
