@@ -35,15 +35,15 @@
 
 <body>
 
-  <header>
+  <header id="header">
     <div class="grid-container">
       <a data-aos="fade-right" class="logo" href="https://paulojanai.netlify.app"><img src="./img/logo-dark.svg"
           alt="Logo Paulo Janai"></a>
       <nav>
         <ul data-aos="fade-left">
-          <li><a href="#works">Trabalhos</a></li>
-          <li><a href="#section-about">Sobre</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#works">Work</a></li>
+          <li><a href="#section-about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
           <ul class="social">
             <li>
               <a href="https://github.com/paulojanai" target="_blank">
@@ -74,15 +74,14 @@
     <div class="grid-container">
       <div class="content" data-aos="fade-right">
         <div class="opa">
-          <h3 class="paragraph">Opa,</h3>
+          <h3 class="paragraph">Hey,</h3>
           <img class="hand" src="./img/hand.svg" alt="Emoji hand">
         </div>
-        <h1>Eu sou Janai</h1>
-        <p class="body-xl">Frontend & Mobile Developer | UI Designer</p>
-        <p class="body-m">Criando e desenvolvendo interfaces com o foco na experiência do usuário. Colaborando
-          com
-          equipes multidisciplinares para garantir produtos funcionais e esteticamente agradáveis. Trabalhou com algumas
-          das maiores empresas do brasil, como Casa Magalhães e Grupo Boticário.</p>
+        <h1>I'm Janai</h1>
+        <p class="body-xl">Mobile Developer | UI Designer</p>
+        <p class="body-m">Designing and developing interfaces with a focus on user experience. Collaborating with
+          multidisciplinary teams to ensure functional and aesthetically pleasing products. He has worked with some of
+          the biggest companies in Brazil, such as Casa Magalhães and Grupo Boticário.</p>
 
         <div class="companies">
           <img src="./img/grupo_boticario.png" alt="Logo Grupo Boticário">
@@ -100,11 +99,11 @@
 
   <section id="works" class="section-works">
     <div class="grid-container">
-      <h2>Trabalhos</h2>
+      <h2>Work</h2>
 
       <div class="coming-soon">
         <img src="./img/history.svg" alt="Ícone history">
-        <p class="body-l">Em breve</p>
+        <p class="body-l">Coming soon</p>
       </div>
     </div>
 
@@ -114,7 +113,7 @@
     <div class="grid-container">
       <div class="header">
         <div class="text" data-aos="fade-right">
-          <h2>Sobre</h2>
+          <h2>About</h2>
           <p class="body-m">Apaixonado e fascinado em desenhar e desenvolver interfaces, acreditando que a
             construção
             estruturada de interfaces é a melhor maneira de projetar produtos eficientes, intuitivos, consistentes e,
@@ -122,7 +121,7 @@
         </div>
         <a href="./paulojanai-cv.pdf" target="_blank" class="btn btn-primary" data-aos="fade-left">
           <div class="content">
-            <span>Ver currículo</span>
+            <span>view resume</span>
             <img src="./img/arrow-up-right.svg" alt="Ícone arrow-up">
           </div>
         </a>
@@ -153,7 +152,7 @@
           </div>
 
           <div class="skills">
-            <p class="body-l">Ferramentas</p>
+            <p class="body-l">Tools & techs</p>
             <div class="list">
               <ul>
                 <li>- VS Code</li>
@@ -205,7 +204,7 @@
           </div>
 
           <div class="skills">
-            <p class="body-l">Ferramentas</p>
+            <p class="body-l">Tools & techs</p>
             <div class="list">
               <ul>
                 <li>- Figma & Adobe XD</li>
@@ -279,11 +278,11 @@
           <div class="links">
             <a href="./paulojanai-cv.pdf" class="footer-link" download="paulojanai-cv">
               <img src="./img/file-text.svg" alt="Ícone file-text">
-              <span>currículo</span>
+              <span>Resume</span>
             </a>
             <a href="./paulojanai-portfolio.pdf" class="footer-link" download="paulojanai-portfolio">
               <img src="./img/file-text.svg" alt="Ícone file-text">
-              <span>portifólio</span>
+              <span>Portfolio</span>
             </a>
           </div>
         </div>
@@ -331,12 +330,15 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/scrollUpShowHeader.js"></script>
 
   <script>
     AOS.init({
       duration: 1200,
       once: true
     });
+
+    scrollUpShowHeader();
   </script>
 
 </body>
