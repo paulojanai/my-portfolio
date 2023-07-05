@@ -5,7 +5,7 @@
   text-decoration: none;
   border: none;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Archivo', sans-serif;
 }
 
 html {
@@ -29,4 +29,8 @@ body {
 button {
   background-color: transparent;
   cursor: pointer;
+}
+
+.border {
+  border: 1px solid red;
 }

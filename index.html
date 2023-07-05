@@ -27,7 +27,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
@@ -37,13 +37,12 @@
 
   <header id="header">
     <div class="grid-container">
-      <a data-aos="fade-right" class="logo" href="https://paulojanai.netlify.app"><img src="./img/logo-dark.svg"
-          alt="Logo Paulo Janai"></a>
+      <a data-aos="fade-right" class="logo" href="#"><img src="./img/logo-dark.svg" alt="Logo Paulo Janai"></a>
       <nav>
-        <ul data-aos="fade-left">
-          <li><a href="#works">Work</a></li>
-          <li><a href="#section-about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul data-aos="fade-left" class="js-nav">
+          <li><a href="#section-work" class="link">Work</a></li>
+          <li><a href="#section-about" class="link">About</a></li>
+          <li><a href="#section-contact" class="link">Contact</a></li>
           <ul class="social">
             <li>
               <a href="https://github.com/paulojanai" target="_blank">
@@ -70,9 +69,9 @@
     </div>
   </header>
 
-  <div id="menu-mobile">
+  <div id="menu-mobile" class="menu-mobile">
     <div class="grid-container">
-      <div class="menu">
+      <div class="container">
         <span onclick="closeMenu()" data-aos="fade-left" class="close">
           <img src="./img/x.svg" alt="Ícone menu">
         </span>
@@ -132,13 +131,87 @@
     </div>
   </section>
 
-  <section id="works" class="section-works">
+  <section id="section-work" class="section-works">
     <div class="grid-container">
-      <h2>Work</h2>
+      <h2 data-aos="fade-right">Work</h2>
 
-      <div class="coming-soon">
+      <!-- <div class="coming-soon">
         <img src="./img/history.svg" alt="Ícone history">
         <p class="body-l">Coming soon</p>
+      </div> -->
+      <div class="works">
+        <!-- <div class="row-works" data-aos="fade-up">
+          <div class="card-work">
+            <a href="#">
+              <div class="thumb">
+                <img src="./img/thumbnail_project.png" alt="Imagem">
+              </div>
+
+              <div class="card-footer">
+                <h4>Aplicativo entregou.me</h4>
+                <ul>
+                  <li class="tag tag-light">
+                    <p>mobile development</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+
+          </div>
+          <div class="card-work">
+            <a href="#">
+              <div class="thumb">
+                <img src="./img/thumbnail_project.png" alt="Imagem">
+              </div>
+
+              <div class="card-footer">
+                <h4>Adaptação entregou.me</h4>
+                <ul>
+                  <li class="tag tag-light">
+                    <p>ui designer</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <div class="row-works" data-aos="fade-up">
+          <div class="card-work">
+            <a href="./weather-forecast.html">
+              <div class="thumb">
+                <span class="tag tag-dark">
+                  <p>case study</p>
+                </span>
+                <img src="./img/weather-forecast/weather-forecast-photo-hero.png" alt="Imagem hero">
+              </div>
+
+              <div class="card-footer">
+                <h4>App para previsão de tempo</h4>
+                <ul>
+                  <li class="tag tag-light">
+                    <p>ui designer</p>
+                  </li>
+                  <li class="tag tag-light">
+                    <p>mobile development</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="archive" data-aos="fade-up">
+        <h3>Archive & Scraps</h3>
+        <div class="list-archives">
+          <div class="card-archive">
+            <a href="https://www.figma.com/community/file/1007003859649427952" target="_blank">
+              <div class="thumb">
+                <img src="./img/Archive/palette_colors_clickup.png" alt="Imagem">
+              </div>
+              <p>Palette Colors Clickup 1.0</p>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -174,7 +247,7 @@
             <div class="list">
               <ul>
                 <li>- State management</li>
-                <li>- Develop and structure components</li>
+                <li>- Develop and structure <br>components</li>
                 <!-- <li>- Testes unitários e 2e2 com Detox</li> -->
               </ul>
               <ul>
@@ -260,7 +333,7 @@
   <section class="section-experience">
     <div class="grid-container" data-aos="fade-up">
       <div class="experience">
-        <h3>Experiência</h3>
+        <h3>Experience</h3>
         <div class="item-experience">
           <p class="body-l">Grupo Boticário - Product Designer</p>
           <p class="body-m">Aug 2022 - Mar 2023</p>
@@ -280,7 +353,7 @@
       </div>
 
       <div class="experience">
-        <h3>Educação</h3>
+        <h3>Education</h3>
         <div class="item-experience">
           <p class="body-l">Codeboost by Will Moreira</p>
           <p class="body-m">May 2023 - Aug 2023, William Moreira</p>
@@ -297,7 +370,7 @@
     </div>
   </section>
 
-  <footer id="contact">
+  <footer id="section-contact">
     <div class="grid-container">
       <div class="top">
         <a href="#" class="btn btn-primary-light">
@@ -363,17 +436,14 @@
     </div>
   </footer>
 
-  <script src="./js/menuMobile.js"></script>
+  <script src="./js/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./js/scrollUpShowHeader.js"></script>
 
   <script>
     AOS.init({
       duration: 1200,
       once: true
     });
-
-    scrollUpShowHeader();
   </script>
 
 </body>

@@ -15,6 +15,41 @@ a {
   }
 }
 
+.tag {
+  display: inline-block;
+  border-radius: 150px;
+  border: 2px solid $grayscale-700;
+  padding: 0.4rem 1.2rem;
+
+  p {
+    @include flex(row, center, center);
+    font-size: 1.6rem;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  &-dark {
+    background-color: $grayscale-700;
+    color: $grayscale-50;
+  }
+
+  &-light {
+    background-color: $grayscale-50;
+    color: $grayscale-700;
+  }
+
+  @include responsive (768px) {
+    padding: 0.2rem 1.2rem;
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+}
+
 .item-experience {
   padding: 2.4rem 0rem;
   border-bottom: 1px solid $grayscale-200;

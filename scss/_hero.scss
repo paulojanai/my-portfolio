@@ -38,8 +38,6 @@
 
         img {
           height: 40px;
-          filter: grayscale(1);
-          transition: filter 0.3s;
 
           &:last-child {
             height: 28px;
@@ -116,5 +114,54 @@
   @include responsive(768px) {
     padding-top: 16rem;
     padding-bottom: 6rem;
+  }
+}
+
+.work-hero {
+  padding-top: 20rem;
+
+  .grid-container {
+    .header {
+      @include flex(row, flex-start, space-between);
+
+      h1 {
+        max-width: 94rem;
+        margin-bottom: 6rem;
+      }
+
+      .client {
+        p.body-m {
+          color: $grayscale-400;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    @include responsive(1200px) {
+      .header {
+        h1 {
+          max-width: 70rem;
+        }
+      }
+    }
+
+    @include responsive(991px) {
+      .header {
+        @include flex(column, flex-start, space-between);
+        margin-bottom: 6rem;
+
+        h1 {
+          margin-bottom: 2.4rem;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  @include responsive(768px) {
+    padding-top: 16rem;
   }
 }
