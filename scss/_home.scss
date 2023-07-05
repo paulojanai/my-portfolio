@@ -2,16 +2,181 @@
   background-color: $grayscale-100;
   @include padding_section();
 
-  .coming-soon {
-    margin-top: 6rem;
-    color: $grayscale-400;
-    gap: 0.8rem;
+  .grid-container {
+    .coming-soon {
+      margin-top: 6rem;
+      color: $grayscale-400;
+      gap: 0.8rem;
 
-    img {
-      height: 2.4rem;
+      img {
+        height: 2.4rem;
+      }
+
+      @include flex(row, center, flex-start)
     }
 
-    @include flex(row, center, flex-start)
+    .works {
+      margin-top: 6rem;
+
+      @include flex(column, flex-start, flex-start);
+      gap: 3.2rem;
+
+      .row-works {
+        @include flex(row, flex-start, flex-start);
+        gap: 3.2rem;
+
+        .card-work {
+          background-color: $grayscale-50;
+          border: 1px solid $grayscale-200;
+          max-width: 62.4rem;
+          transition: all 0.3s;
+
+          &:hover {
+            -webkit-box-shadow: 0px 8px 32px 2px $grayscale-150;
+            -moz-box-shadow: 0px 8px 32px 2px $grayscale-150;
+            box-shadow: 0px 8px 32px 2px $grayscale-150;
+          }
+
+          .thumb {
+            position: relative;
+            overflow: hidden;
+
+            .tag {
+              position: absolute;
+              top: 2.4rem;
+              left: 2.4rem;
+              z-index: 2022;
+            }
+
+            img {
+              transition: all 0.3s;
+
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+
+          .card-footer {
+            padding: 2.4rem 2.4rem;
+
+            h4 {
+              color: $grayscale-700;
+              margin-bottom: 1.6rem;
+            }
+
+            ul {
+              @include flex(row, center, flex-start);
+              gap: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+
+    .archive {
+      margin-top: 6rem;
+
+      .list-archives {
+        margin-top: 3.2rem;
+        @include flex(row, center, flex-start);
+        gap: 2.4rem;
+
+        .card-archive {
+          background-color: $grayscale-50;
+          max-width: 41rem;
+          border: 1px solid $grayscale-200;
+          overflow: hidden;
+          transition: box-shadow 0.3s;
+
+          &:hover {
+            -webkit-box-shadow: 0px 8px 32px 2px $grayscale-150;
+            -moz-box-shadow: 0px 8px 32px 2px $grayscale-150;
+            box-shadow: 0px 8px 32px 2px $grayscale-150;
+          }
+
+          a {
+            .thumb {
+              overflow: hidden;
+
+              img {
+                transition: all 0.3s;
+
+                &:hover {
+                  transform: scale(1.1);
+                }
+              }
+            }
+
+            p {
+              padding: 2.4rem 2.4rem;
+              color: $grayscale-700;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    @include responsive (1200px) {
+      .works {
+        .row-works {
+          @include flex(column, flex-start, flex-start);
+          gap: 3.2rem;
+
+          .card-work {
+            max-width: 100%;
+            @include flex(column, flex-start, flex-start);
+            gap: 3.2rem;
+          }
+        }
+      }
+    }
+
+    @include responsive (768px) {
+      .works {
+        .card-work {
+          .card-footer {
+            padding: 1.6rem 1.6rem;
+          }
+        }
+      }
+
+      .archive {
+        .list-archives {
+          @include flex(column, center, flex-start);
+          gap: 2.4rem;
+
+          .card-archive {
+            max-width: 100%;
+
+            a {
+              p {
+                padding: 2rem 1.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include responsive (600px) {
+      .works {
+        .row-works {
+          .card-work {
+            .card-footer {
+
+              ul {
+                @include flex(column, flex-start, flex-start);
+                gap: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -188,6 +353,113 @@
         h3 {
           margin-bottom: 0.8rem;
         }
+      }
+    }
+  }
+}
+
+.section-overview-work {
+  @include padding_section();
+
+  .grid-container {
+    .header {
+      max-width: 100rem;
+
+      h3 {
+        margin-bottom: 2.4rem;
+      }
+
+      p {
+        color: $grayscale-500;
+      }
+    }
+
+    .details {
+      margin-top: 6rem;
+      margin-bottom: 6rem;
+
+      .list {
+        margin-top: 2.4rem;
+        @include flex(row, flex, flex-start);
+        gap: 4rem;
+
+        .group {
+          width: 100%;
+          border-right: 1px solid $grayscale-300;
+          max-width: 40rem;
+          @include flex(column, flex-start, flex-start);
+          gap: 1.2rem;
+
+          //Only tech
+          ul {
+            @include flex(row, center, center);
+            gap: 1.6rem;
+          }
+
+          &:last-child {
+            border: none;
+          }
+
+          .body-m {
+            color: $grayscale-500;
+          }
+
+          a {
+            @include flex(row, center, center);
+            gap: 0.4rem;
+
+            img {
+              height: 1.8rem;
+            }
+
+            p {
+              color: $grayscale-700;
+              font-size: 1.6rem;
+              font-weight: 600;
+              text-decoration-line: underline;
+            }
+          }
+        }
+      }
+
+    }
+
+    .challenge {
+      background-color: $grayscale-700;
+      padding: 6rem;
+      @include flex(column, flex-start, flex-start);
+      gap: 2.4rem;
+
+      h3 {
+        color: $grayscale-50;
+      }
+
+      p {
+        color: $grayscale-300;
+      }
+    }
+
+    @include responsive(991px) {
+      .details {
+        margin-top: 3.2rem;
+        margin-bottom: 3.2rem;
+
+        .list {
+          @include flex(column, flex-start, flex-start);
+          gap: 3.2rem;
+
+          .group {
+            max-width: 100%;
+            border-right: none;
+            border-bottom: 1px solid $grayscale-200;
+            padding-bottom: 3.2rem;
+          }
+        }
+      }
+
+      .challenge {
+        padding: 4rem;
+        gap: 2rem;
       }
     }
   }
