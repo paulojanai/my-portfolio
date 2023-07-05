@@ -3,18 +3,6 @@
   @include padding_section();
 
   .grid-container {
-    .coming-soon {
-      margin-top: 6rem;
-      color: $grayscale-400;
-      gap: 0.8rem;
-
-      img {
-        height: 2.4rem;
-      }
-
-      @include flex(row, center, flex-start)
-    }
-
     .works {
       margin-top: 6rem;
 
@@ -31,6 +19,11 @@
           max-width: 62.4rem;
           transition: all 0.3s;
 
+          .link-work-disabled {
+            pointer-events: none;
+            cursor: default;
+          }
+
           &:hover {
             -webkit-box-shadow: 0px 8px 32px 2px $grayscale-150;
             -moz-box-shadow: 0px 8px 32px 2px $grayscale-150;
@@ -40,6 +33,21 @@
           .thumb {
             position: relative;
             overflow: hidden;
+
+            .coming-soon {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              @include flex(row, center, center);
+              gap: 1.2rem;
+              background-color: $grayscale-700-opacity-80;
+
+              p {
+                color: $grayscale-50;
+              }
+            }
 
             .tag {
               position: absolute;
