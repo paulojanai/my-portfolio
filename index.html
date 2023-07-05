@@ -37,13 +37,12 @@
 
   <header id="header">
     <div class="grid-container">
-      <a data-aos="fade-right" class="logo" href="https://paulojanai.netlify.app"><img src="./img/logo-dark.svg"
-          alt="Logo Paulo Janai"></a>
+      <a data-aos="fade-right" class="logo" href="#"><img src="./img/logo-dark.svg" alt="Logo Paulo Janai"></a>
       <nav>
-        <ul data-aos="fade-left">
-          <li><a href="#works">Work</a></li>
-          <li><a href="#section-about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul data-aos="fade-left" class="js-nav">
+          <li><a href="#section-work" class="link">Work</a></li>
+          <li><a href="#section-about" class="link">About</a></li>
+          <li><a href="#section-contact" class="link">Contact</a></li>
           <ul class="social">
             <li>
               <a href="https://github.com/paulojanai" target="_blank">
@@ -132,7 +131,7 @@
     </div>
   </section>
 
-  <section id="works" class="section-works">
+  <section id="section-work" class="section-works">
     <div class="grid-container">
       <h2 data-aos="fade-right">Work</h2>
 
@@ -201,10 +200,10 @@
           </div>
         </div>
       </div>
-      <div class="archive">
-        <h3 data-aos="fade-up">Archive & Scraps</h3>
+      <div class="archive" data-aos="fade-up">
+        <h3>Archive & Scraps</h3>
         <div class="list-archives">
-          <div class="card-archive" data-aos="fade-up">
+          <div class="card-archive">
             <a href="https://www.figma.com/community/file/1007003859649427952" target="_blank">
               <div class="thumb">
                 <img src="./img/Archive/palette_colors_clickup.png" alt="Imagem">
@@ -371,7 +370,7 @@
     </div>
   </section>
 
-  <footer id="contact">
+  <footer id="section-contact">
     <div class="grid-container">
       <div class="top">
         <a href="#" class="btn btn-primary-light">
@@ -437,17 +436,14 @@
     </div>
   </footer>
 
-  <script src="./js/menuMobile.js"></script>
+  <script src="./js/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./js/scrollUpShowHeader.js"></script>
 
   <script>
     AOS.init({
       duration: 1200,
       once: true
     });
-
-    scrollUpShowHeader();
   </script>
 
 </body>

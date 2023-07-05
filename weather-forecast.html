@@ -37,13 +37,12 @@
 
   <header id="header">
     <div class="grid-container">
-      <a data-aos="fade-right" class="logo" href="https://paulojanai.netlify.app"><img src="./img/logo-dark.svg"
-          alt="Logo Paulo Janai"></a>
+      <a data-aos="fade-right" class="logo" href="#"><img src="./img/logo-dark.svg" alt="Logo Paulo Janai"></a>
       <nav>
-        <ul data-aos="fade-left">
-          <li><a href="#works">Work</a></li>
-          <li><a href="#section-about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul data-aos="fade-left" class="js-nav">
+          <li><a href="index.html#section-work">Work</a></li>
+          <li><a href="index.html#section-about">About</a></li>
+          <li><a href="#section-contact" class="link">Contact</a></li>
           <ul class="social">
             <li>
               <a href="https://github.com/paulojanai" target="_blank">
@@ -123,7 +122,7 @@
 
   <section class="section-overview-work">
     <div class="grid-container">
-      <div class="header">
+      <div class="header" data-aos="fade-up">
         <h3>Overview</h3>
         <p class="body-m">O Weater Forecast é um aplicativo para obter previsões do tempo de qualquer cidade. Com acesso
           a
@@ -131,7 +130,7 @@
         </p>
       </div>
 
-      <div class="details">
+      <div class="details" data-aos="fade-up">
         <h3>Tasks e techs</h3>
         <div class="list">
           <div class="group">
@@ -163,7 +162,7 @@
         </div>
       </div>
 
-      <div class="challenge">
+      <div class="challenge" data-aos="fade-up">
         <h3>Challenge and goal</h3>
         <p class="body-m">Criar uma solução de interface clean, eficiente e intuitiva com os recursos listados.
           Desenvolver um aplicativo que possa funcionar em dispositivos que possuem o sistema Android e iOS.</p>
@@ -174,7 +173,7 @@
     </div>
   </section>
 
-  <footer id="contact">
+  <footer id="section-contact">
     <div class="grid-container">
       <div class="top">
         <a href="#" class="btn btn-primary-light">
@@ -240,17 +239,14 @@
     </div>
   </footer>
 
-  <script src="./js/menuMobile.js"></script>
+  <script src="./js/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./js/scrollUpShowHeader.js"></script>
 
   <script>
     AOS.init({
       duration: 1200,
       once: true
     });
-
-    scrollUpShowHeader();
   </script>
 
 </body>

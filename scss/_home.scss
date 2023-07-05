@@ -375,8 +375,8 @@
     }
 
     .details {
-      margin-top: 6rem;
-      margin-bottom: 6rem;
+      margin-top: 8rem;
+      margin-bottom: 8rem;
 
       .list {
         margin-top: 2.4rem;
@@ -441,8 +441,8 @@
 
     @include responsive(991px) {
       .details {
-        margin-top: 3.2rem;
-        margin-bottom: 3.2rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
 
         .list {
           @include flex(column, flex-start, flex-start);
