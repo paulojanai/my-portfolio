@@ -1,5 +1,5 @@
 //Link navbar smooth transition
-const linksSection = document.querySelectorAll('.js-nav li a.link');
+const linksSection = document.querySelectorAll('.js-nav li a.js-link');
 
 function scrollToSection (event) {
   event.preventDefault();
