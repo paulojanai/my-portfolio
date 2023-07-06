@@ -4,7 +4,7 @@
 
   .grid-container {
     .works {
-      margin-top: 6rem;
+      margin-top: 4rem;
 
       @include flex(column, flex-start, flex-start);
       gap: 3.2rem;
@@ -75,7 +75,8 @@
 
             ul {
               @include flex(row, center, flex-start);
-              gap: 1.6rem;
+              flex-wrap: wrap;
+              gap: 1.2rem;
             }
           }
         }
@@ -145,9 +146,19 @@
 
     @include responsive (768px) {
       .works {
-        .card-work {
-          .card-footer {
-            padding: 1.6rem 1.6rem;
+        margin-top: 2.4rem;
+
+        .row-works {
+
+          .card-work {
+            .card-footer {
+              padding: 1.6rem 1.6rem;
+
+              h4 {
+                margin-bottom: 1.2rem;
+              }
+
+            }
           }
         }
       }
@@ -163,22 +174,6 @@
             a {
               p {
                 padding: 2rem 1.6rem;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    @include responsive (600px) {
-      .works {
-        .row-works {
-          .card-work {
-            .card-footer {
-
-              ul {
-                @include flex(column, flex-start, flex-start);
-                gap: 0.8rem;
               }
             }
           }
