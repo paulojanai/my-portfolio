@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,245 +10,323 @@
   <meta name="title" content="Paulo Janai - Developer & Designer" />
   <meta name="description" content="Frontend Developer, Mobile Developer and UI Designer" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://paulojanai.com/" />
-  <meta property="og:title" content="Paulo Janai - Developer & Designer" />
-  <meta property="og:description" content="Frontend Developer, Mobile Developer and UI Designer" />
-  <meta property="og:image" content="https://paulojanai.com/share_image.svg" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://paulojanai.netlify.app/" />
+    <meta property="og:title" content="Paulo Janai - Developer & Designer" />
+    <meta
+      property="og:description"
+      content="Frontend Developer, Mobile Developer and UI Designer"
+    />
+    <meta
+      property="og:image"
+      content="https://paulojanai.netlify.app//share_image.svg"
+    />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://paulojanai.com/" />
-  <meta property="twitter:title" content="Paulo Janai - Developer & Designer" />
-  <meta property="twitter:description" content="Frontend Developer, Mobile Developer and UI Designer" />
-  <meta property="twitter:image" content="https://paulojanai.com/share_image.svg" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://paulojanai.netlify.app/" />
+    <meta
+      property="twitter:title"
+      content="Paulo Janai - Developer & Designer"
+    />
+    <meta
+      property="twitter:description"
+      content="Frontend Developer, Mobile Developer and UI Designer"
+    />
+    <meta
+      property="twitter:image"
+      content="https://paulojanai.netlify.app//share_image.svg"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<body>
-
-  <header id="header">
-    <div class="grid-container">
-      <a data-aos="fade-right" class="logo" href="https://paulojanai.com"><img src="./img/logo-dark.svg"
-          alt="Logo Paulo Janai"></a>
-      <nav>
-        <ul data-aos="fade-left" class="js-nav">
-          <li><a href="index.html#section-work">Work</a></li>
-          <li><a href="index.html#section-about">About</a></li>
-          <li><a href="#section-contact" class="js-link">Contact</a></li>
-          <ul class="social">
-            <li>
-              <a href="https://github.com/paulojanai" target="_blank">
-                <img src="./img/brand-github.svg" alt="Ícone github">
-              </a>
-            </li>
-            <li>
-              <a href="https://dribbble.com/paulojanai" target="_blank">
-                <img src="./img/brand-dribbble.svg" alt="Ícone dribbble">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/paulojanai/" target="_blank">
-                <img src="./img/brand-linkedin.svg" alt="Ícone linkedin">
-              </a>
-            </li>
+  <body>
+    <header id="header">
+      <div class="grid-container">
+        <a data-aos="fade-right" class="logo" href="index.html"
+          ><img src="./img/logo-dark.svg" alt="Logo Paulo Janai"
+        /></a>
+        <nav>
+          <ul data-aos="fade-left" class="js-nav">
+            <li><a href="index.html#section-work">Work</a></li>
+            <li><a href="index.html#section-about">About</a></li>
+            <li><a href="#section-contact" class="js-link">Contact</a></li>
+            <ul class="social">
+              <li>
+                <a href="https://github.com/paulojanai" target="_blank">
+                  <img src="./img/brand-github.svg" alt="Ícone github" />
+                </a>
+              </li>
+              <li>
+                <a href="https://dribbble.com/paulojanai" target="_blank">
+                  <img src="./img/brand-dribbble.svg" alt="Ícone dribbble" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/paulojanai/"
+                  target="_blank"
+                >
+                  <img src="./img/brand-linkedin.svg" alt="Ícone linkedin" />
+                </a>
+              </li>
+            </ul>
           </ul>
-        </ul>
-      </nav>
+        </nav>
 
-      <span onclick="openMenu()" data-aos="fade-left" class="menu">
-        <img src="./img/menu.svg" alt="Ícone menu">
-      </span>
-    </div>
-  </header>
-
-  <div id="menu-mobile" class="menu-mobile">
-    <div class="grid-container">
-      <div class="container">
-        <span onclick="closeMenu()" data-aos="fade-left" class="close">
-          <img src="./img/x.svg" alt="Ícone menu">
+        <span onclick="openMenu()" data-aos="fade-left" class="menu">
+          <img src="./img/menu.svg" alt="Ícone menu" />
         </span>
       </div>
+    </header>
 
-      <nav>
-        <ul data-aos="fade-left" class="items-menu js-nav">
-          <li><a href="index.html#section-work" onclick="closeMenu()">Work</a></li>
-          <li><a href="index.html#section-about" onclick="closeMenu()">About</a></li>
-          <li><a href="#section-contact" onclick="closeMenu()" class="js-link">Contact</a></li>
-          <div class="social">
-            <li>
-              <a href="https://github.com/paulojanai" target="_blank">
-                <img src="./img/brand-github.svg" alt="Ícone github">
-              </a>
-            </li>
-            <li>
-              <a href="https://dribbble.com/paulojanai" target="_blank">
-                <img src="./img/brand-dribbble.svg" alt="Ícone dribbble">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/paulojanai/" target="_blank">
-                <img src="./img/brand-linkedin.svg" alt="Ícone linkedin">
-              </a>
-            </li>
-          </div>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
-  <section class="work-hero">
-    <div class="grid-container">
-      <div class="header" data-aos="fade-up">
-        <h1>Weather forecast app</h1>
-        <div class="client">
-          <p class="body-m">Client</p>
-          <span class="tag tag-dark">
-            <p>case study</p>
+    <div id="menu-mobile" class="menu-mobile">
+      <div class="grid-container">
+        <div class="container">
+          <span onclick="openMenu()" data-aos="fade-left" class="close">
+            <img src="./img/x.svg" alt="Ícone menu" />
           </span>
         </div>
-      </div>
 
-      <img data-aos="fade-up" src="./img/weather-forecast/weather-forecast-photo-hero.png" alt="Imagem hero">
+        <nav>
+          <ul data-aos="fade-left" class="items-menu js-nav">
+            <li>
+              <a href="index.html#section-work" onclick="openMenu()">Work</a>
+            </li>
+            <li>
+              <a href="index.html#section-about" onclick="openMenu()">About</a>
+            </li>
+            <li>
+              <a href="#section-contact" onclick="openMenu()" class="js-link"
+                >Contact</a
+              >
+            </li>
+            <div class="social">
+              <li>
+                <a href="https://github.com/paulojanai" target="_blank">
+                  <img src="./img/brand-github.svg" alt="Ícone github" />
+                </a>
+              </li>
+              <li>
+                <a href="https://dribbble.com/paulojanai" target="_blank">
+                  <img src="./img/brand-dribbble.svg" alt="Ícone dribbble" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/paulojanai/"
+                  target="_blank"
+                >
+                  <img src="./img/brand-linkedin.svg" alt="Ícone linkedin" />
+                </a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </section>
 
-  <section class="section-overview-work">
-    <div class="grid-container">
-      <div class="header" data-aos="fade-up">
-        <h3>Overview</h3>
-        <p class="body-m">O Weater Forecast é um aplicativo para obter previsões do tempo de qualquer cidade. Com acesso
-          a
-          informações detalhadas como: umidade, velocidade do vento, visibilidade, temperatura atual, máxima e mínima.
-        </p>
+    <section class="work-hero">
+      <div class="grid-container">
+        <div class="header" data-aos="fade-up">
+          <h1>Weather forecast app</h1>
+          <div class="client">
+            <p class="body-m">Client</p>
+            <span class="tag tag-dark">
+              <p>case study</p>
+            </span>
+          </div>
+        </div>
+
+        <img
+          data-aos="fade-up"
+          src="./img/weather-forecast/weather-forecast-photo-hero.png"
+          alt="Imagem hero"
+        />
       </div>
+    </section>
 
-      <div class="details" data-aos="fade-up">
-        <h3>Tasks e techs</h3>
-        <div class="list">
-          <div class="group">
-            <p class="body-l">UI Designer</p>
-            <p class="body-m">Benchmark, Visual design e Teste de usabilidade</p>
+    <section class="section-overview-work">
+      <div class="grid-container">
+        <div class="header" data-aos="fade-up">
+          <h3>Overview</h3>
+          <p class="body-m">
+            O Weater Forecast é um aplicativo para obter previsões do tempo de
+            qualquer cidade. Com acesso a informações detalhadas como: umidade,
+            velocidade do vento, visibilidade, temperatura atual, máxima e
+            mínima.
+          </p>
+        </div>
 
-            <!-- <a href="#"><img src="./img/brand-github-dark.svg" alt="">
+        <div class="details" data-aos="fade-up">
+          <h3>Tasks e techs</h3>
+          <div class="list">
+            <div class="group">
+              <p class="body-l">UI Designer</p>
+              <p class="body-m">
+                Benchmark, Visual design e Teste de usabilidade
+              </p>
+
+              <!-- <a href="#"><img src="./img/brand-github-dark.svg" alt="">
               <p>Figma</p>
             </a> -->
-          </div>
-          <div class="group">
-            <p class="body-l">Mobile Developement</p>
-            <ul>
-              <li><img src="./img/expo.svg" alt="Logo expo"></li>
-              <li><img src="./img/typescript.svg" alt=""></li>
-              <li><img src="./img/react-native.svg" alt=""></li>
-              <li><img src="./img/axios.svg" alt=""></li>
-            </ul>
+            </div>
+            <div class="group">
+              <p class="body-l">Mobile Developement</p>
+              <ul>
+                <li><img src="./img/expo.svg" alt="Logo expo" /></li>
+                <li><img src="./img/typescript.svg" alt="" /></li>
+                <li><img src="./img/react-native.svg" alt="" /></li>
+                <li><img src="./img/axios.svg" alt="" /></li>
+              </ul>
 
-            <a href="https://github.com/paulojanai/weather-forecast-app"><img src="./img/brand-github-dark.svg" alt="">
-              <p>Repositório</p>
-            </a>
-          </div>
+              <a href="https://github.com/paulojanai/weather-forecast-app"
+                ><img src="./img/brand-github-dark.svg" alt="" />
+                <p>Repositório</p>
+              </a>
+            </div>
 
-          <div class="group">
-            <p class="body-l">Timeline</p>
-            <p class="body-m">Ago 2020 - Set 2020</p>
+            <div class="group">
+              <p class="body-l">Timeline</p>
+              <p class="body-m">Ago 2020 - Set 2020</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="challenge" data-aos="fade-up">
-        <h3>Challenge and goal</h3>
-        <p class="body-m">Criar uma solução de interface clean, eficiente e intuitiva com os recursos listados.
-          Desenvolver um aplicativo que possa funcionar em dispositivos que possuem o sistema Android e iOS.</p>
-        <p class="body-l">"Objetivo foi praticar e aplicar conceito de UI e desenvolver um aplicativo utilizando expo
-          cli
-          com typescript"</p>
+        <div class="challenge" data-aos="fade-up">
+          <h3>Challenge and goal</h3>
+          <p class="body-m">
+            Criar uma solução de interface clean, eficiente e intuitiva com os
+            recursos listados. Desenvolver um aplicativo que possa funcionar em
+            dispositivos que possuem o sistema Android e iOS.
+          </p>
+          <p class="body-l">
+            "Objetivo foi praticar e aplicar conceito de UI e desenvolver um
+            aplicativo utilizando expo cli com typescript"
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer id="section-contact">
-    <div class="grid-container">
-      <div class="top">
-        <a href="#" class="btn btn-primary-light">
-          <div class="content">
-            <span>LET'S WORK TOGETHER</span>
-            <img src="./img/arrow-up-right-light.svg" alt="Ícone arrow-up">
+    <footer id="section-contact">
+      <div class="grid-container">
+        <div class="top">
+          <a href="#" class="btn btn-primary-light">
+            <div class="content">
+              <span>LET'S WORK TOGETHER</span>
+              <img src="./img/arrow-up-right-light.svg" alt="Ícone arrow-up" />
+            </div>
+          </a>
+
+          <div class="group-links">
+            <p class="span">Downloads</p>
+            <div class="links">
+              <a
+                href="./paulojanai-cv.pdf"
+                class="footer-link"
+                download="paulojanai-cv"
+              >
+                <img src="./img/file-text.svg" alt="Ícone file-text" />
+                <span>Resume</span>
+              </a>
+              <a
+                href="./paulojanai-portfolio.pdf"
+                class="footer-link"
+                download="paulojanai-portfolio"
+              >
+                <img src="./img/file-text.svg" alt="Ícone file-text" />
+                <span>Portfolio</span>
+              </a>
+            </div>
           </div>
-        </a>
+        </div>
 
         <div class="group-links">
-          <p class="span">Downloads</p>
+          <p class="span">Follow me</p>
           <div class="links">
-            <a href="./paulojanai-cv.pdf" class="footer-link" download="paulojanai-cv">
-              <img src="./img/file-text.svg" alt="Ícone file-text">
-              <span>Resume</span>
-            </a>
-            <a href="./paulojanai-portfolio.pdf" class="footer-link" download="paulojanai-portfolio">
-              <img src="./img/file-text.svg" alt="Ícone file-text">
-              <span>Portfolio</span>
-            </a>
+            <div class="left">
+              <a
+                href="https://github.com/paulojanai"
+                target="_blank"
+                class="footer-link"
+              >
+                <img src="./img/brand-github.svg" alt="Ícone github" />
+                <span>github</span>
+              </a>
+              <a
+                href="https://dribbble.com/paulojanai"
+                class="footer-link"
+                target="_blank"
+              >
+                <img src="./img/brand-dribbble.svg" alt="Ícone dribbble" />
+                <span>dribbble</span>
+              </a>
+              <a
+                href="https://www.behance.net/paulojanai"
+                class="footer-link"
+                target="_blank"
+              >
+                <img src="./img/brand-behance.svg" alt="Ícone behance" />
+                <span>behance</span>
+              </a>
+            </div>
+            <div class="right">
+              <a
+                href="https://www.linkedin.com/in/paulojanai/"
+                class="footer-link"
+                target="_blank"
+              >
+                <img src="./img/brand-linkedin.svg" alt="Ícone linkedin" />
+                <span>linkedin</span>
+              </a>
+              <a
+                href="https://twitter.com/paulo_janai"
+                class="footer-link"
+                target="_blank"
+              >
+                <img src="./img/brand-twitter.svg" alt="Ícone twitter" />
+                <span>twitter</span>
+              </a>
+              <a
+                href="https://www.instagram.com/pjanai.ms/"
+                class="footer-link"
+                target="_blank"
+              >
+                <img src="./img/brand-instagram.svg" alt="Ícone instagram" />
+                <span>instagram</span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="group-links">
-        <p class="span">Follow me</p>
-        <div class="links">
-          <div class="left">
-            <a href="https://github.com/paulojanai" target="_blank" class="footer-link">
-              <img src="./img/brand-github.svg" alt="Ícone github">
-              <span>github</span>
-            </a>
-            <a href="https://dribbble.com/paulojanai" class="footer-link" target="_blank">
-              <img src="./img/brand-dribbble.svg" alt="Ícone dribbble">
-              <span>dribbble</span>
-            </a>
-            <a href="https://www.behance.net/paulojanai" class="footer-link" target="_blank">
-              <img src="./img/brand-behance.svg" alt="Ícone behance">
-              <span>behance</span>
-            </a>
-          </div>
-          <div class="right">
-            <a href="https://www.linkedin.com/in/paulojanai/" class="footer-link" target="_blank">
-              <img src="./img/brand-linkedin.svg" alt="Ícone linkedin">
-              <span>linkedin</span>
-            </a>
-            <a href="https://twitter.com/paulo_janai" class="footer-link" target="_blank">
-              <img src="./img/brand-twitter.svg" alt="Ícone twitter">
-              <span>twitter</span>
-            </a>
-            <a href="https://www.instagram.com/pjanai.ms/" class="footer-link" target="_blank">
-              <img src="./img/brand-instagram.svg" alt="Ícone instagram">
-              <span>instagram</span>
-            </a>
-          </div>
+        <div class="bottom">
+          <p>© Copyright 2023. All rights reserved.</p>
+          <p>Designed and developed: Paulo Janai</p>
         </div>
       </div>
+    </footer>
 
-      <div class="bottom">
-        <p>© Copyright 2023. All rights reserved.</p>
-        <p>Designed and developed: Paulo Janai</p>
-      </div>
-    </div>
-  </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script src="./js/script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    AOS.init({
-      duration: 1200,
-      once: true
-    });
-  </script>
-
-</body>
-
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+      });
+    </script>
+  </body>
 </html>
