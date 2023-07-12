@@ -1,34 +1,33 @@
 //Link navbar smooth transition
-const linksSection = document.querySelectorAll('.js-nav li a.js-link');
+const linksSection = document.querySelectorAll(".js-nav li a.js-link");
 
-function scrollToSection (event) {
+function scrollToSection(event) {
   event.preventDefault();
 
-  const href = event.currentTarget.getAttribute('href');
+  const href = event.currentTarget.getAttribute("href");
 
   const section = document.querySelector(href);
 
   const initPosition = section.offsetTop;
 
-window.scrollTo({
-  top: initPosition,
-  behavior:'smooth'
-})  
+  window.scrollTo({
+    top: initPosition,
+    behavior: "smooth",
+  });
 
   // console.log(initPosition);
 }
 
-linksSection.forEach(link => {
-  link.addEventListener('click', scrollToSection);
-})
+linksSection.forEach((link) => {
+  link.addEventListener("click", scrollToSection);
+});
 
 // Scroll up show header
 let oldValue = 0;
 var element = document.getElementById("header");
 
 // element.classList.add("header-fixed");
-window.addEventListener('scroll', function (e) {
-
+window.addEventListener("scroll", function (e) {
   // Get the new Value
   newValue = window.scrollY;
   // console.log(newValue);
@@ -48,13 +47,10 @@ window.addEventListener('scroll', function (e) {
 
   // Update the old value
   oldValue = newValue;
-})
+});
 
 //Menu mobile
 function openMenu() {
-  document.getElementById("menu-mobile").style.width = "100%";
-}
-
-function closeMenu() {
-  document.getElementById("menu-mobile").style.width = "0%";
+  document.getElementById("menu-mobile").classList.toggle("active");
+  document.documentElement.classList.toggle("open-menu");
 }
