@@ -383,24 +383,25 @@
 
       .list {
         margin-top: 2.4rem;
-        @include flex(row, flex, flex-start);
+        @include flex(row, flex, space-between);
         gap: 4rem;
+        width: 100%;
 
         .group {
+          @include flex(column, flex-start, flex-start);
           width: 100%;
           border-right: 1px solid $grayscale-300;
-          max-width: 40rem;
-          @include flex(column, flex-start, flex-start);
           gap: 1.2rem;
 
           //Only tech
           ul {
+            height: 4rem;
             @include flex(row, center, center);
             gap: 1.6rem;
           }
 
           &:last-child {
-            border: none;
+            border-right: none;
           }
 
           .body-m {
@@ -438,7 +439,15 @@
       }
 
       p {
-        color: $grayscale-300;
+        &.body-m {
+          color: $grayscale-200;
+          padding-bottom: 2.4rem;
+          border-bottom: 1px solid $grayscale-500;
+        }
+
+        &.body-l {
+          color: $grayscale-50;
+        }
       }
     }
 
