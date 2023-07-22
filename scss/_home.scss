@@ -70,13 +70,11 @@
 
             h4 {
               color: $grayscale-700;
-              margin-bottom: 1.6rem;
+              margin-bottom: 0.6rem;
             }
 
-            ul {
-              @include flex(row, center, flex-start);
-              flex-wrap: wrap;
-              gap: 1.2rem;
+            p {
+              color: $grayscale-700;
             }
           }
         }

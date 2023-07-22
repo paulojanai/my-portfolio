@@ -15,32 +15,32 @@ a {
   }
 }
 
-.tag {
-  display: inline-block;
-  border-radius: 150px;
-  border: 2px solid $grayscale-700;
-  padding: 0.2rem 1.2rem;
-  background-color: $grayscale-700;
-  color: $grayscale-50;
+// .tag {
+//   display: inline-block;
+//   border-radius: 150px;
+//   border: 2px solid $grayscale-700;
+//   padding: 0.2rem 1.2rem;
+//   background-color: $grayscale-700;
+//   color: $grayscale-50;
 
-  p {
-    @include flex(row, center, center);
-    font-size: 1.3rem;
-    // font-family: 'Clash Display', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-  }
+//   p {
+//     @include flex(row, center, center);
+//     font-size: 1.3rem;
+//     // font-family: 'Clash Display', sans-serif;
+//     font-weight: 600;
+//     letter-spacing: 0.4px;
+//     text-transform: uppercase;
+//   }
 
-  @include responsive (600px) {
-    padding: 0.2rem 1.2rem;
+//   @include responsive (600px) {
+//     padding: 0.2rem 1.2rem;
 
-    p {
-      font-size: 1.1rem;
-    }
-  }
+//     p {
+//       font-size: 1.1rem;
+//     }
+//   }
 
-}
+// }
 
 .item-experience {
   padding: 2.4rem 0rem;
