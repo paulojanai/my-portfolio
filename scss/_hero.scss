@@ -55,8 +55,38 @@
       }
     }
 
-    .my-photo {
-      height: 60rem;
+    .picture {
+      .my-photo {
+        height: 60rem;
+      }
+
+      .open-to-work {
+        position: absolute;
+        top: 30px;
+        left: -90px;
+
+        .base-open-to-work {
+          height: 18rem;
+        }
+
+        .text-open-to-work {
+          position: absolute;
+          top: 0;
+          left: 0;
+          animation: rotation 10s infinite linear;
+          height: 18rem;
+        }
+
+        @keyframes rotation {
+          from {
+            transform: rotate(0deg);
+          }
+
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
     }
 
     @include responsive(1200px) {
@@ -64,8 +94,10 @@
         max-width: 100%;
       }
 
-      .my-photo {
-        display: none;
+      .picture {
+        .my-photo {
+          display: none;
+        }
       }
     }
 
@@ -78,11 +110,13 @@
         }
       }
 
-      .my-photo {
-        display: inline-block;
-        height: auto;
-        width: 100%;
-        margin-top: 6rem;
+      .picture {
+        .my-photo {
+          display: inline-block;
+          height: auto;
+          width: 100%;
+          margin-top: 6rem;
+        }
       }
     }
 
