@@ -81,15 +81,15 @@
       }
     }
 
-    .archive {
-      margin-top: 6rem;
+    .personal {
+      margin-top: 12rem;
 
-      .list-archives {
+      .list-personal {
         margin-top: 3.2rem;
         @include flex(row, center, flex-start);
         gap: 2.4rem;
 
-        .card-archive {
+        .card-personal {
           background-color: $grayscale-50;
           max-width: 41rem;
           border: 1px solid $grayscale-200;
@@ -121,6 +121,10 @@
               font-size: 1.6rem;
               font-style: normal;
               font-weight: 600;
+
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -153,7 +157,7 @@
               padding: 1.6rem 1.6rem;
 
               h4 {
-                margin-bottom: 1.2rem;
+                margin-bottom: 0.4rem;
               }
 
             }
@@ -161,12 +165,14 @@
         }
       }
 
-      .archive {
-        .list-archives {
+      .personal {
+        margin-top: 8rem;
+
+        .list-personal {
           @include flex(column, center, flex-start);
           gap: 2.4rem;
 
-          .card-archive {
+          .card-personal {
             max-width: 100%;
 
             a {
@@ -194,10 +200,22 @@
     }
 
     .header {
-      @include flex(row, center, space-between);
+      @include flex(column, center, space-between);
 
       .text {
-        max-width: 72.4rem;
+        margin-top: 4rem;
+        width: 100%;
+        @include flex(row, center, space-between);
+
+        .paragraph {
+          max-width: 76.4rem;
+
+          p {
+            &:first-child {
+              margin-bottom: 1.2rem;
+            }
+          }
+        }
       }
     }
 
@@ -257,6 +275,17 @@
     }
 
     @include responsive(1200px) {
+      .header {
+        .text {
+          max-width: 100%;
+          margin-bottom: 2.4rem;
+
+          .paragraph {
+            max-width: 64rem
+          }
+        }
+      }
+
       .body {
         @include flex(column, center, flex-start);
 
@@ -269,11 +298,17 @@
 
     @include responsive(991px) {
       .header {
-        @include flex(column, flex-start, space-between);
-
         .text {
-          max-width: 100%;
-          margin-bottom: 2.4rem
+          margin-top: 2.4rem;
+          @include flex(column, flex-start, flex-start);
+
+          .paragraph {
+            max-width: 100%;
+          }
+
+          a {
+            margin-top: 2.4rem;
+          }
         }
       }
     }
