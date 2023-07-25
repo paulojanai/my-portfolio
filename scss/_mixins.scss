@@ -15,6 +15,14 @@
   }
 }
 
+@mixin padding_section_work () {
+  padding-top: 10rem;
+
+  @include responsive(768px) {
+    padding-top: 6rem;
+  }
+}
+
 @mixin responsive ($screen_width) {
   @media (max-width: $screen_width) {
     @content
