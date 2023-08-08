@@ -1,3 +1,9 @@
+.redirect {
+  background-color: $grayscale-100;
+  height: 100vh;
+  @include flex(row, center, center)
+}
+
 .section-works {
   background-color: $grayscale-100;
   @include padding_section();
