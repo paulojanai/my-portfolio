@@ -15,50 +15,10 @@
     }
 
     .works {
-      margin-top: 4rem;
-
+      margin-top: 6rem;
       display: grid;
-      gap: 3.2rem;
+      gap: 6rem;
       grid-template-columns: repeat(2, auto);
-
-      .card-work {
-        background-color: transparent;
-        cursor: url("../img/cursor.svg"), auto;
-
-        .thumb {
-          position: relative;
-          overflow: hidden;
-
-          .tag {
-            position: absolute;
-            top: 2.4rem;
-            left: 2.4rem;
-            z-index: 2022;
-          }
-
-          img {
-            transition: all 0.3s;
-
-            &:hover {
-              transform: scale(1.025);
-            }
-          }
-        }
-
-        .card-footer {
-          margin-top: 2.4rem;
-
-          h4 {
-            color: $grayscale-700;
-            margin-bottom: 0.6rem;
-          }
-
-          p {
-            color: $grayscale-700;
-          }
-        }
-      }
-
     }
 
     .personal {
@@ -69,32 +29,6 @@
         display: grid;
         gap: 2.4rem;
         grid-template-columns: repeat(3, auto);
-
-        .card-personal {
-          max-width: 41rem;
-          overflow: hidden;
-          cursor: url("../img/cursor.svg"), auto;
-
-          .thumb {
-            overflow: hidden;
-
-            img {
-              transition: all 0.3s;
-
-              &:hover {
-                transform: scale(1.02);
-              }
-            }
-          }
-
-          p {
-            margin-top: 2rem;
-            color: $grayscale-700;
-            font-size: 1.6rem;
-            font-style: normal;
-            font-weight: 600;
-          }
-        }
       }
     }
 
@@ -105,13 +39,13 @@
         .card-work {
           max-width: 100%;
           @include flex(column, flex-start, flex-start);
-          gap: 3.2rem;
         }
       }
 
       .personal {
         .list-personal {
           grid-template-columns: repeat(2, auto);
+          gap: 3.2rem;
 
           .card-personal {
             max-width: 100%;
@@ -123,10 +57,11 @@
     @include responsive (768px) {
       .works {
         margin-top: 2.4rem;
+        gap: 4rem;
 
         .card-work {
           .card-footer {
-            padding: 1.6rem 1.6rem;
+            margin-top: 2.4rem;
 
             h4 {
               margin-bottom: 0.4rem;
@@ -140,7 +75,7 @@
 
         .list-personal {
           @include flex(column, center, flex-start);
-          gap: 2.4rem;
+          gap: 4rem;
 
           .card-personal {
             a {

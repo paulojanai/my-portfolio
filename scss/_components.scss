@@ -42,6 +42,17 @@ a {
 
 // }
 
+.tag-coming-soon {
+  height: 4rem;
+  position: absolute;
+  left: 2.4rem;
+  bottom: 2.4rem;
+
+  @include responsive (768px) {
+    height: 3.2rem;
+  }
+}
+
 .item-experience {
   padding: 2.4rem 0rem;
   border-bottom: 1px solid $grayscale-200;
@@ -62,6 +73,64 @@ a {
 
   &:last-child {
     border: none;
+  }
+}
+
+.card-work {
+  background-color: transparent;
+  cursor: url("../img/cursor.svg"), auto;
+
+  .thumb {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.025);
+      }
+    }
+  }
+
+  .card-footer {
+    margin-top: 2.4rem;
+
+    h4 {
+      color: $grayscale-700;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      color: $grayscale-700;
+    }
+  }
+}
+
+.card-personal {
+  max-width: 41rem;
+  overflow: hidden;
+  cursor: url("../img/cursor.svg"), auto;
+
+  .thumb {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  p {
+    margin-top: 2rem;
+    color: $grayscale-700;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
   }
 }
 

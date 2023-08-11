@@ -21,6 +21,21 @@
         }
       }
 
+      .open-to-work {
+        display: inline-block;
+        height: 2.8rem;
+        padding: 0rem 1.6rem;
+        border-radius: 15rem;
+        background: #6EFC6C;
+
+        p {
+          line-height: 2.6rem;
+          color: $grayscale-700;
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+      }
+
       color: $grayscale-300;
 
       h1 {
@@ -29,10 +44,11 @@
 
       p.body-xl {
         margin-top: 0.8rem;
-        margin-bottom: 3.2rem
+        margin-bottom: 2.4rem
       }
 
       p.description {
+        margin-top: 2.4rem;
         font-size: 1.8rem;
         line-height: 180%;
       }
@@ -65,33 +81,33 @@
       }
     }
 
-    .open-to-work {
-      position: absolute;
-      top: 30px;
-      left: 55%;
+    // .open-to-work {
+    //   position: absolute;
+    //   top: 30px;
+    //   left: 55%;
 
-      .base-open-to-work {
-        height: 18rem;
-      }
+    //   .base-open-to-work {
+    //     height: 18rem;
+    //   }
 
-      .text-open-to-work {
-        position: absolute;
-        top: 0;
-        left: 0;
-        animation: rotation 10s infinite linear;
-        height: 18rem;
-      }
+    //   .text-open-to-work {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     animation: rotation 10s infinite linear;
+    //     height: 18rem;
+    //   }
 
-      @keyframes rotation {
-        from {
-          transform: rotate(0deg);
-        }
+    //   @keyframes rotation {
+    //     from {
+    //       transform: rotate(0deg);
+    //     }
 
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    }
+    //     to {
+    //       transform: rotate(360deg);
+    //     }
+    //   }
+    // }
 
     @include responsive(1200px) {
       .content {
@@ -104,12 +120,12 @@
         }
       }
 
-      .open-to-work {
-        top: auto;
-        bottom: -180px;
-        right: 80px;
-        left: auto;
-      }
+      // .open-to-work {
+      //   top: auto;
+      //   bottom: -180px;
+      //   right: 80px;
+      //   left: auto;
+      // }
     }
 
     @include responsive(991px) {
@@ -130,20 +146,20 @@
         }
       }
 
-      .open-to-work {
-        top: auto;
-        bottom: -180px;
-        right: 30px;
-        left: auto;
+      // .open-to-work {
+      //   top: auto;
+      //   bottom: -180px;
+      //   right: 30px;
+      //   left: auto;
 
-        .base-open-to-work {
-          height: 18rem;
-        }
+      //   .base-open-to-work {
+      //     height: 18rem;
+      //   }
 
-        .text-open-to-work {
-          height: 18rem;
-        }
-      }
+      //   .text-open-to-work {
+      //     height: 18rem;
+      //   }
+      // }
     }
 
     @include responsive(600px) {
@@ -174,20 +190,20 @@
         }
       }
 
-      .open-to-work {
-        top: auto;
-        bottom: -95px;
-        right: 30px;
-        left: auto;
+      // .open-to-work {
+      //   top: auto;
+      //   bottom: -95px;
+      //   right: 30px;
+      //   left: auto;
 
-        .base-open-to-work {
-          height: 14rem;
-        }
+      //   .base-open-to-work {
+      //     height: 14rem;
+      //   }
 
-        .text-open-to-work {
-          height: 14rem;
-        }
-      }
+      //   .text-open-to-work {
+      //     height: 14rem;
+      //   }
+      // }
     }
 
   }
