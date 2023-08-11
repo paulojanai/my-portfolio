@@ -16,10 +16,12 @@
 }
 
 @mixin padding_section_work () {
-  padding-top: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 
   @include responsive(768px) {
-    padding-top: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
