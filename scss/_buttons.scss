@@ -42,13 +42,3 @@
     @include expand_border($grayscale-700)
   }
 }
-
-.btn-primary-light {
-  background-color: $grayscale-50;
-  color: $grayscale-700;
-  transition: all 0.3s;
-
-  span {
-    @include expand_border($grayscale-700)
-  }
-}

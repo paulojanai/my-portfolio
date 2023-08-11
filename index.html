@@ -27,10 +27,11 @@
   <meta property="twitter:description" content="Frontend Developer, Mobile Developer and UI Designer" />
   <meta property="twitter:image" content="https://paulojanai.com/img/metatag.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=PT+Serif:wght@400;700&display=swap"
+    rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/main.css" />
 </head>
@@ -122,6 +123,9 @@
         </div>
         <h1>Eu sou Janai</h1>
         <p class="body-xl">Developer & Designer</p>
+        <div class="open-to-work">
+          <p>Open to Work</p>
+        </div>
         <p class="description">
           Tenho experiência que abrange desde a criação de interfaces até o desenvolvimento. Ao longo da minha carreira,
           trabalhei em equipes multidisciplinares, colaborando com negócio, designers e desenvolvedores. No passado,
@@ -138,71 +142,56 @@
       <div class="picture" data-aos="fade-left">
         <img class="my-photo" src="./img/picture-hero.webp" alt="My photo" />
       </div>
-
-      <div class="open-to-work" data-aos="zoom-out-right">
-        <img class="base-open-to-work" src="./img/base-opentowork.svg" alt="">
-        <img class="text-open-to-work" src="./img/text-opentowork.svg" alt="">
-      </div>
     </div>
   </section>
 
   <section id="section-work" class="section-works">
     <div class="grid-container">
       <h2 data-aos="fade-right">Trabalhos</h2>
-      <div class="works">
-        <div class="row-works" data-aos="fade-up">
-          <div class="card-work">
-            <a href="./entregoume-app.html" class="link-work-disabled">
-              <div class="thumb">
-                <div class="coming-soon">
-                  <img src="./img/history.svg" alt="Ícone history" />
-                  <p class="body-l">Em breve</p>
-                </div>
-                <img src="./img/entregoume-app/entregou_me-app-hero.png" alt="Imagem" />
-              </div>
-              <div class="card-footer">
-                <h4>Entregou.me aplicativo</h4>
-                <p class="body-m">Mobile development</p>
-              </div>
-            </a>
+      <div class="works" data-aos="fade-up">
+        <a href="./entregoume-app.html" class="card-work">
+          <div class="thumb">
+            <img src="./img/entregoume-app/entregou_me-app-hero.png" alt="Imagem" />
           </div>
-          <div class="card-work">
-            <a href="#" class="link-work-disabled">
-              <div class="thumb">
-                <div class="coming-soon">
-                  <img src="./img/history.svg" alt="Ícone history" />
-                  <p class="body-l">Em breve</p>
-                </div>
-                <img src="./img/entregoume-white-label/entregou_me-white-label-hero.png" alt="Imagem" />
-              </div>
-
-              <div class="card-footer">
-                <h4>Entregoue.me web</h4>
-                <p class="body-m">UI Designer</p>
-              </div>
-            </a>
+          <div class="card-footer">
+            <h4>Entregou.me aplicativo</h4>
+            <p class="body-m">Mobile development</p>
           </div>
-        </div>
+        </a>
+        <a href="#" class="card-work disabled">
+          <div class="thumb">
+            <img src="./img/coming-soon.svg" alt="" class="tag-coming-soon">
+            <img src="./img/entregoume-white-label/entregou_me-white-label-hero.png" alt="Imagem" />
+          </div>
+          <div class="card-footer">
+            <h4>Entregou.me web</h4>
+            <p class="body-m">UI Designer</p>
+          </div>
+        </a>
       </div>
       <div class="personal" data-aos="fade-up">
         <h3>Projetos pessoais</h3>
         <div class="list-personal">
-          <div class="card-personal">
-            <a href="https://www.figma.com/community/file/1007003859649427952" target="_blank">
-              <div class="thumb">
-                <img src="./img/personal/palette_colors_clickup.png" alt="Imagem" />
-              </div>
-              <p>Palette Colors Clickup 1.0</p>
-            </a>
-          </div>
-          <!-- <div class="card-personal">
-            <a href="#">
-              <div class="thumb">
-                <img src="./img/personal/weather-forecast/weather-forecast-photo-hero.png" alt="Imagem" />
-              </div>
-              <p>Previsão do tempo aplicativo</p>
-            </a>
-          </div> -->
+          <a href="https://www.figma.com/community/file/1007003859649427952" target="_blank" class="card-personal">
+            <div class="thumb">
+              <img src="./img/personal/palette_colors_clickup.png" alt="Imagem" />
+            </div>
+            <p>Palette Colors Clickup 1.0</p>
+          </a>
+          <a href="#" class="card-personal disabled">
+            <div class="thumb">
+              <img src="./img/coming-soon.svg" alt="" class="tag-coming-soon">
+              <img src="./img/personal/gym-life/gym-life-hero.png" alt="Imagem" />
+            </div>
+            <p>Página de cadastro academia</p>
+          </a>
+          <a href="#" class="card-personal disabled">
+            <div class="thumb">
+              <img src="./img/coming-soon.svg" alt="" class="tag-coming-soon">
+              <img src="./img/personal/weather-forecast/weather-forecast-2.0-hero.png" alt="Imagem" />
+            </div>
+            <p>Weather Forecast 2.0</p>
+          </a>
         </div>
       </div>
     </div>
@@ -231,14 +220,14 @@
       </div>
       <div class="body" data-aos="fade-up">
         <div class="card">
-          <div class="icon">
+          <div class="card-header">
             <img src="./img/developer.svg" alt="Ícone developer" />
-          </div>
 
-          <h4>Developer</h4>
-          <p class="body-m">
-            Curto em codificar as coisas do zero e dá vidas as ideias no mobile e na web.
-          </p>
+            <h4>Developer</h4>
+            <p class="body-m">
+              Curto em codificar as coisas do zero e dá vidas as ideias no mobile <br> e na web.
+            </p>
+          </div>
 
           <div class="skills">
             <p class="body-l">Habilidades</p>
@@ -258,7 +247,7 @@
           </div>
 
           <div class="skills">
-            <p class="body-l">Ferramentas & Tecnologias</p>
+            <p class="body-l">Ferramentas</p>
             <div class="list">
               <ul>
                 <li>- VS Code</li>
@@ -282,15 +271,15 @@
           </div>
         </div>
         <div class="card">
-          <div class="icon">
+          <div class="card-header">
             <img src="./img/designer.svg" alt="Ícone designer" />
-          </div>
 
-          <h4>Designer</h4>
-          <p class="body-m">
-            Desenhando interfaces estruturadas, interações inteligentes e utilizando padrões de design para apps e
-            websites
-          </p>
+            <h4>Designer</h4>
+            <p class="body-m">
+              Desenhando interfaces estruturadas, interações inteligentes e utilizando padrões de design para apps e
+              websites
+            </p>
+          </div>
 
           <div class="skills">
             <p class="body-l">Habilidades</p>
@@ -377,9 +366,9 @@
   <footer id="section-contact">
     <div class="grid-container">
       <div class="top">
-        <a href="mailto:pjanai.m.s@gmail.com?subject=[subject]&body=[content]" class="btn btn-primary-light">
+        <a href="mailto:pjanai.m.s@gmail.com?subject=[subject]&body=[content]" class="btn btn-secondary">
           <div class="content">
-            <span>VAMOS TRABALHAR JUNTOS</span>
+            <span>Vamos trabalhar juntos</span>
             <img src="./img/arrow-up-right-light.svg" alt="Ícone arrow-up" />
           </div>
         </a>
@@ -405,37 +394,37 @@
           <div class="left">
             <a href="https://github.com/paulojanai" target="_blank" class="footer-link">
               <img src="./img/brand-github.svg" alt="Ícone github" />
-              <span>github</span>
+              <span>Github</span>
             </a>
             <a href="https://dribbble.com/paulojanai" class="footer-link" target="_blank">
               <img src="./img/brand-dribbble.svg" alt="Ícone dribbble" />
-              <span>dribbble</span>
+              <span>Dribbble</span>
             </a>
             <a href="https://www.behance.net/paulojanai" class="footer-link" target="_blank">
               <img src="./img/brand-behance.svg" alt="Ícone behance" />
-              <span>behance</span>
+              <span>Behance</span>
             </a>
           </div>
           <div class="right">
             <a href="https://www.linkedin.com/in/paulojanai/" class="footer-link" target="_blank">
               <img src="./img/brand-linkedin.svg" alt="Ícone linkedin" />
-              <span>linkedin</span>
+              <span>Linkedin</span>
             </a>
             <a href="https://twitter.com/paulo_janai" class="footer-link" target="_blank">
               <img src="./img/brand-twitter.svg" alt="Ícone twitter" />
-              <span>twitter</span>
+              <span>Twitter</span>
             </a>
             <a href="https://www.instagram.com/pjanai.ms/" class="footer-link" target="_blank">
               <img src="./img/brand-instagram.svg" alt="Ícone instagram" />
-              <span>instagram</span>
+              <span>Instagram</span>
             </a>
           </div>
         </div>
       </div>
 
       <div class="bottom">
-        <p>© Copyright 2023. All rights reserved.</p>
-        <p>Designed and developed: Paulo Janai</p>
+        <p>© Copyright 2023. Todos os direitos reservados.</p>
+        <p>Design e desenvolvimento por Paulo Janai</p>
       </div>
     </div>
   </footer>

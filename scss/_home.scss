@@ -9,82 +9,16 @@
   @include padding_section();
 
   .grid-container {
+    .disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+
     .works {
-      margin-top: 4rem;
-
-      @include flex(column, flex-start, flex-start);
-      gap: 3.2rem;
-
-      .row-works {
-        @include flex(row, flex-start, flex-start);
-        gap: 3.2rem;
-
-        .card-work {
-          background-color: $grayscale-50;
-          border: 1px solid $grayscale-200;
-          max-width: 62.4rem;
-          transition: all 0.3s;
-
-          .link-work-disabled {
-            pointer-events: none;
-            cursor: default;
-          }
-
-          &:hover {
-            -webkit-box-shadow: 0px 8px 32px 2px $grayscale-150;
-            -moz-box-shadow: 0px 8px 32px 2px $grayscale-150;
-            box-shadow: 0px 8px 32px 2px $grayscale-150;
-          }
-
-          .thumb {
-            position: relative;
-            overflow: hidden;
-
-            .coming-soon {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              @include flex(row, center, center);
-              gap: 1.2rem;
-              background-color: $grayscale-700-opacity-80;
-
-              p {
-                color: $grayscale-50;
-              }
-            }
-
-            .tag {
-              position: absolute;
-              top: 2.4rem;
-              left: 2.4rem;
-              z-index: 2022;
-            }
-
-            img {
-              transition: all 0.3s;
-
-              &:hover {
-                transform: scale(1.1);
-              }
-            }
-          }
-
-          .card-footer {
-            padding: 2.4rem 2.4rem;
-
-            h4 {
-              color: $grayscale-700;
-              margin-bottom: 0.6rem;
-            }
-
-            p {
-              color: $grayscale-700;
-            }
-          }
-        }
-      }
+      margin-top: 6rem;
+      display: grid;
+      gap: 6rem;
+      grid-template-columns: repeat(2, auto);
     }
 
     .personal {
@@ -92,61 +26,29 @@
 
       .list-personal {
         margin-top: 3.2rem;
-        @include flex(row, center, flex-start);
+        display: grid;
         gap: 2.4rem;
-
-        .card-personal {
-          background-color: $grayscale-50;
-          max-width: 41rem;
-          border: 1px solid $grayscale-200;
-          overflow: hidden;
-          transition: box-shadow 0.3s;
-
-          &:hover {
-            -webkit-box-shadow: 0px 8px 32px 2px $grayscale-150;
-            -moz-box-shadow: 0px 8px 32px 2px $grayscale-150;
-            box-shadow: 0px 8px 32px 2px $grayscale-150;
-          }
-
-          a {
-            .thumb {
-              overflow: hidden;
-
-              img {
-                transition: all 0.3s;
-
-                &:hover {
-                  transform: scale(1.1);
-                }
-              }
-            }
-
-            p {
-              padding: 2.4rem 2.4rem;
-              color: $grayscale-700;
-              font-size: 1.6rem;
-              font-style: normal;
-              font-weight: 600;
-
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-          }
-        }
+        grid-template-columns: repeat(3, auto);
       }
     }
 
     @include responsive (1200px) {
       .works {
-        .row-works {
+        grid-template-columns: repeat(1, auto);
+
+        .card-work {
+          max-width: 100%;
           @include flex(column, flex-start, flex-start);
+        }
+      }
+
+      .personal {
+        .list-personal {
+          grid-template-columns: repeat(2, auto);
           gap: 3.2rem;
 
-          .card-work {
+          .card-personal {
             max-width: 100%;
-            @include flex(column, flex-start, flex-start);
-            gap: 3.2rem;
           }
         }
       }
@@ -155,17 +57,14 @@
     @include responsive (768px) {
       .works {
         margin-top: 2.4rem;
+        gap: 4rem;
 
-        .row-works {
+        .card-work {
+          .card-footer {
+            margin-top: 2.4rem;
 
-          .card-work {
-            .card-footer {
-              padding: 1.6rem 1.6rem;
-
-              h4 {
-                margin-bottom: 0.4rem;
-              }
-
+            h4 {
+              margin-bottom: 0.4rem;
             }
           }
         }
@@ -176,11 +75,9 @@
 
         .list-personal {
           @include flex(column, center, flex-start);
-          gap: 2.4rem;
+          gap: 4rem;
 
           .card-personal {
-            max-width: 100%;
-
             a {
               p {
                 padding: 2rem 1.6rem;
@@ -210,6 +107,7 @@
 
       .text {
         margin-top: 4rem;
+        margin-bottom: 2.4rem;
         width: 100%;
         @include flex(row, center, space-between);
 
@@ -232,20 +130,21 @@
 
       .card {
         width: 50%;
-        border: 1px solid $grayscale-200;
+        background-color: $grayscale-100;
         padding: 4rem 3.2rem;
         height: 66rem;
 
-        .icon {
-          height: 6.4rem;
-          width: 6.44rem;
-          @include flex(row, center, center);
-          background-color: $grayscale-100;
-          margin-bottom: 2.4rem;
-        }
+        .card-header {
+          padding-bottom: 2.4rem;
+          border-bottom: 1px solid rgba($grayscale-200, 0.5);
 
-        h4 {
-          margin-bottom: 0.8rem;
+          img {
+            margin-bottom: 2.4rem;
+          }
+
+          h4 {
+            margin-bottom: 0.8rem;
+          }
         }
 
         .skills {
@@ -524,7 +423,6 @@
   @include padding_section_work();
 
   .grid-container {
-
     .features {
       margin-top: 3.2rem;
       display: grid;
@@ -578,10 +476,4 @@
       }
     }
   }
-}
-
-.section-photos {
-  @include padding_section_work();
-
-  .grid-container {}
 }
